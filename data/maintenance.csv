@@ -1,0 +1,311 @@
+Maintenance_ID,Asset_ID,Failure_ID,Maintenance_Date,Maintenance_Type,Maintenance_Reason,Component,Technician_ID,Duration_Hours,Planned_Flag,Maintenance_Status,Parts_Replaced,Notes
+MNT00001,AST0001,,2026-07-18 02:00:00.000000000,Inspection,Routine equipment inspection,Fan Blade,TECH010,2.59,True,Completed,None,Planned maintenance completed
+MNT00002,AST0001,,2026-06-14 18:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH008,3.53,True,Completed,None,Planned maintenance completed
+MNT00003,AST0002,,2026-08-03 03:00:00.000000000,Preventive,Scheduled preventive maintenance,Winding,TECH005,1.24,True,Completed,Winding,Planned maintenance completed
+MNT00004,AST0002,,2026-06-01 21:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH011,2.01,True,Completed,None,Planned maintenance completed
+MNT00005,AST0003,,2026-07-11 15:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH003,2.1,True,Completed,None,Planned maintenance completed
+MNT00006,AST0003,,2026-07-23 19:00:00.000000000,Preventive,Scheduled preventive maintenance,Fan Blade,TECH005,0.66,True,Completed,None,Planned maintenance completed
+MNT00007,AST0004,,2026-06-26 00:00:00.000000000,Preventive,Scheduled preventive maintenance,Drive Motor,TECH005,3.33,True,Completed,None,Planned maintenance completed
+MNT00008,AST0004,,2026-08-29 03:00:00.000000000,Preventive,Scheduled preventive maintenance,Roller Bearing,TECH008,2.89,True,Completed,None,Planned maintenance completed
+MNT00009,AST0005,,2026-08-21 11:00:00.000000000,Inspection,Routine equipment inspection,Winding,TECH002,2.82,True,Completed,None,Planned maintenance completed
+MNT00010,AST0006,,2026-08-02 12:00:00.000000000,Preventive,Scheduled preventive maintenance,Lubrication System,TECH010,3.45,True,Completed,None,Planned maintenance completed
+MNT00011,AST0006,,2026-07-04 23:00:00.000000000,Inspection,Routine equipment inspection,Lubrication System,TECH007,0.81,True,Completed,None,Planned maintenance completed
+MNT00012,AST0007,,2026-06-15 01:00:00.000000000,Inspection,Routine equipment inspection,Roller Bearing,TECH010,3.4,True,Completed,None,Planned maintenance completed
+MNT00013,AST0007,,2026-06-16 19:00:00.000000000,Inspection,Routine equipment inspection,Belt,TECH015,0.99,True,Completed,None,Planned maintenance completed
+MNT00014,AST0008,,2026-07-27 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH011,1.2,True,Completed,Bearing,Planned maintenance completed
+MNT00015,AST0009,,2026-06-18 10:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH010,2.62,True,Completed,None,Planned maintenance completed
+MNT00016,AST0010,,2026-08-17 15:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH007,0.83,True,Completed,None,Planned maintenance completed
+MNT00017,AST0011,,2026-08-29 10:00:00.000000000,Preventive,Scheduled preventive maintenance,Drive Motor,TECH005,3.61,True,Completed,None,Planned maintenance completed
+MNT00018,AST0012,,2026-07-13 20:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH014,1.33,True,Completed,None,Planned maintenance completed
+MNT00019,AST0012,,2026-06-17 08:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH013,2.0,True,Completed,Motor,Planned maintenance completed
+MNT00020,AST0012,,2026-07-06 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH004,2.16,True,Completed,None,Planned maintenance completed
+MNT00021,AST0013,,2026-08-09 22:00:00.000000000,Preventive,Scheduled preventive maintenance,Lubrication System,TECH007,1.21,True,Completed,None,Planned maintenance completed
+MNT00022,AST0013,,2026-08-15 19:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH005,2.69,True,Completed,None,Planned maintenance completed
+MNT00023,AST0013,,2026-07-14 19:00:00.000000000,Inspection,Routine equipment inspection,Motor,TECH014,1.15,True,Completed,None,Planned maintenance completed
+MNT00024,AST0014,,2026-08-24 22:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH009,1.61,True,Completed,Belt,Planned maintenance completed
+MNT00025,AST0014,,2026-07-11 12:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH011,1.57,True,Completed,Belt,Planned maintenance completed
+MNT00026,AST0014,,2026-07-23 09:00:00.000000000,Preventive,Scheduled preventive maintenance,Roller Bearing,TECH008,1.09,True,Completed,Roller Bearing,Planned maintenance completed
+MNT00027,AST0015,,2026-08-03 08:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH002,3.87,True,Completed,None,Planned maintenance completed
+MNT00028,AST0015,,2026-08-08 04:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH002,3.99,True,Completed,None,Planned maintenance completed
+MNT00029,AST0016,,2026-08-13 07:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH005,2.72,True,Completed,None,Planned maintenance completed
+MNT00030,AST0016,,2026-08-10 15:00:00.000000000,Preventive,Scheduled preventive maintenance,Winding,TECH011,1.35,True,Completed,None,Planned maintenance completed
+MNT00031,AST0017,,2026-06-13 05:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH011,2.71,True,Completed,None,Planned maintenance completed
+MNT00032,AST0017,,2026-06-26 08:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH006,1.62,True,Completed,None,Planned maintenance completed
+MNT00033,AST0018,,2026-08-21 11:00:00.000000000,Inspection,Routine equipment inspection,Lubrication System,TECH015,2.99,True,Completed,None,Planned maintenance completed
+MNT00034,AST0018,,2026-08-12 06:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH007,3.79,True,Completed,None,Planned maintenance completed
+MNT00035,AST0019,,2026-08-22 01:00:00.000000000,Preventive,Scheduled preventive maintenance,Electrical System,TECH007,2.4,True,Completed,None,Planned maintenance completed
+MNT00036,AST0019,,2026-06-26 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH001,2.31,True,Completed,None,Planned maintenance completed
+MNT00037,AST0019,,2026-06-19 20:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH009,3.59,True,Completed,Bearing,Planned maintenance completed
+MNT00038,AST0020,,2026-07-19 02:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH008,3.6,True,Completed,None,Planned maintenance completed
+MNT00039,AST0021,,2026-07-31 03:00:00.000000000,Inspection,Routine equipment inspection,Winding,TECH014,2.84,True,Completed,None,Planned maintenance completed
+MNT00040,AST0021,,2026-08-02 08:00:00.000000000,Preventive,Scheduled preventive maintenance,Electrical System,TECH014,3.91,True,Completed,None,Planned maintenance completed
+MNT00041,AST0021,,2026-07-10 20:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH014,1.12,True,Completed,Bearing,Planned maintenance completed
+MNT00042,AST0022,,2026-08-19 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Electrical System,TECH012,3.02,True,Completed,None,Planned maintenance completed
+MNT00043,AST0023,,2026-07-14 13:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH003,2.56,True,Completed,None,Planned maintenance completed
+MNT00044,AST0023,,2026-08-26 10:00:00.000000000,Inspection,Routine equipment inspection,Seal,TECH001,1.73,True,Completed,None,Planned maintenance completed
+MNT00045,AST0024,,2026-06-19 20:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH003,3.03,True,Completed,None,Planned maintenance completed
+MNT00046,AST0024,,2026-06-01 16:00:00.000000000,Inspection,Routine equipment inspection,Motor,TECH013,3.79,True,Completed,None,Planned maintenance completed
+MNT00047,AST0025,,2026-08-13 16:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH001,3.75,True,Completed,None,Planned maintenance completed
+MNT00048,AST0026,,2026-06-30 03:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH007,0.76,True,Completed,None,Planned maintenance completed
+MNT00049,AST0026,,2026-06-06 07:00:00.000000000,Preventive,Scheduled preventive maintenance,Drive Motor,TECH010,2.45,True,Completed,None,Planned maintenance completed
+MNT00050,AST0027,,2026-06-27 01:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH011,3.97,True,Completed,Motor,Planned maintenance completed
+MNT00051,AST0027,,2026-07-03 16:00:00.000000000,Preventive,Scheduled preventive maintenance,Fan Blade,TECH007,0.98,True,Completed,None,Planned maintenance completed
+MNT00052,AST0027,,2026-06-23 09:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH012,1.4,True,Completed,None,Planned maintenance completed
+MNT00053,AST0028,,2026-06-29 12:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH014,2.77,True,Completed,None,Planned maintenance completed
+MNT00054,AST0028,,2026-07-19 14:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH007,2.53,True,Completed,None,Planned maintenance completed
+MNT00055,AST0029,,2026-06-24 22:00:00.000000000,Preventive,Scheduled preventive maintenance,Drive Motor,TECH006,1.5,True,Completed,None,Planned maintenance completed
+MNT00056,AST0029,,2026-06-29 09:00:00.000000000,Preventive,Scheduled preventive maintenance,Drive Motor,TECH005,1.56,True,Completed,None,Planned maintenance completed
+MNT00057,AST0030,,2026-06-01 04:00:00.000000000,Inspection,Routine equipment inspection,Motor,TECH013,0.8,True,Completed,None,Planned maintenance completed
+MNT00058,AST0030,,2026-06-02 22:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH013,2.73,True,Completed,None,Planned maintenance completed
+MNT00059,AST0031,,2026-08-10 02:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH010,1.9,True,Completed,None,Planned maintenance completed
+MNT00060,AST0031,,2026-07-01 20:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH009,3.87,True,Completed,None,Planned maintenance completed
+MNT00061,AST0031,,2026-08-09 08:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH014,3.7,True,Completed,None,Planned maintenance completed
+MNT00062,AST0032,,2026-07-08 08:00:00.000000000,Preventive,Scheduled preventive maintenance,Fan Blade,TECH006,3.08,True,Completed,None,Planned maintenance completed
+MNT00063,AST0033,,2026-06-07 09:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH014,3.15,True,Completed,Motor,Planned maintenance completed
+MNT00064,AST0033,,2026-07-13 00:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH012,3.49,True,Completed,None,Planned maintenance completed
+MNT00065,AST0034,,2026-06-23 22:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH005,2.13,True,Completed,None,Planned maintenance completed
+MNT00066,AST0035,,2026-08-07 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Fan Blade,TECH008,2.39,True,Completed,None,Planned maintenance completed
+MNT00067,AST0035,,2026-06-21 16:00:00.000000000,Inspection,Routine equipment inspection,Motor,TECH012,3.3,True,Completed,None,Planned maintenance completed
+MNT00068,AST0036,,2026-07-10 20:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH001,3.37,True,Completed,None,Planned maintenance completed
+MNT00069,AST0036,,2026-07-15 10:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH012,1.46,True,Completed,None,Planned maintenance completed
+MNT00070,AST0037,,2026-07-02 09:00:00.000000000,Preventive,Scheduled preventive maintenance,Lubrication System,TECH013,1.68,True,Completed,None,Planned maintenance completed
+MNT00071,AST0038,,2026-06-18 09:00:00.000000000,Preventive,Scheduled preventive maintenance,Electrical System,TECH005,1.49,True,Completed,Electrical System,Planned maintenance completed
+MNT00072,AST0038,,2026-06-18 04:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH010,3.31,True,Completed,None,Planned maintenance completed
+MNT00073,AST0039,,2026-07-17 18:00:00.000000000,Preventive,Scheduled preventive maintenance,Drive Motor,TECH007,1.38,True,Completed,None,Planned maintenance completed
+MNT00074,AST0039,,2026-06-02 12:00:00.000000000,Inspection,Routine equipment inspection,Belt,TECH007,2.88,True,Completed,None,Planned maintenance completed
+MNT00075,AST0040,,2026-07-25 00:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH006,2.27,True,Completed,None,Planned maintenance completed
+MNT00076,AST0040,,2026-08-08 03:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH009,3.85,True,Completed,None,Planned maintenance completed
+MNT00077,AST0041,,2026-07-06 10:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH005,2.71,True,Completed,None,Planned maintenance completed
+MNT00078,AST0042,,2026-08-02 04:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH013,3.27,True,Completed,None,Planned maintenance completed
+MNT00079,AST0043,,2026-06-27 09:00:00.000000000,Inspection,Routine equipment inspection,Belt,TECH013,3.08,True,Completed,None,Planned maintenance completed
+MNT00080,AST0043,,2026-07-02 06:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH013,3.17,True,Completed,None,Planned maintenance completed
+MNT00081,AST0043,,2026-07-20 21:00:00.000000000,Inspection,Routine equipment inspection,Belt,TECH009,1.28,True,Completed,None,Planned maintenance completed
+MNT00082,AST0044,,2026-08-04 04:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH013,0.8,True,Completed,None,Planned maintenance completed
+MNT00083,AST0044,,2026-06-21 19:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH004,3.82,True,Completed,None,Planned maintenance completed
+MNT00084,AST0045,,2026-08-15 10:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH010,1.82,True,Completed,None,Planned maintenance completed
+MNT00085,AST0045,,2026-06-02 14:00:00.000000000,Inspection,Routine equipment inspection,Impeller,TECH013,2.22,True,Completed,None,Planned maintenance completed
+MNT00086,AST0046,,2026-08-10 03:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH003,3.38,True,Completed,None,Planned maintenance completed
+MNT00087,AST0046,,2026-06-08 21:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH008,1.81,True,Completed,None,Planned maintenance completed
+MNT00088,AST0047,,2026-08-27 17:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH015,3.92,True,Completed,None,Planned maintenance completed
+MNT00089,AST0047,,2026-06-09 10:00:00.000000000,Inspection,Routine equipment inspection,Motor,TECH003,0.76,True,Completed,None,Planned maintenance completed
+MNT00090,AST0048,,2026-08-27 06:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH001,1.26,True,Completed,None,Planned maintenance completed
+MNT00091,AST0048,,2026-06-20 14:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH008,3.7,True,Completed,None,Planned maintenance completed
+MNT00092,AST0049,,2026-06-16 12:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH008,1.09,True,Completed,None,Planned maintenance completed
+MNT00093,AST0049,,2026-06-23 11:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH011,1.76,True,Completed,None,Planned maintenance completed
+MNT00094,AST0050,,2026-07-09 16:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH013,3.35,True,Completed,None,Planned maintenance completed
+MNT00095,AST0050,,2026-06-17 05:00:00.000000000,Preventive,Scheduled preventive maintenance,Impeller,TECH009,1.96,True,Completed,None,Planned maintenance completed
+MNT00096,AST0051,,2026-07-07 12:00:00.000000000,Inspection,Routine equipment inspection,Fan Blade,TECH001,0.59,True,Completed,None,Planned maintenance completed
+MNT00097,AST0051,,2026-06-10 07:00:00.000000000,Inspection,Routine equipment inspection,Motor,TECH005,1.03,True,Completed,None,Planned maintenance completed
+MNT00098,AST0052,,2026-06-29 16:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH015,0.72,True,Completed,Bearing,Planned maintenance completed
+MNT00099,AST0052,,2026-06-22 13:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH003,2.37,True,Completed,None,Planned maintenance completed
+MNT00100,AST0053,,2026-06-30 17:00:00.000000000,Inspection,Routine equipment inspection,Winding,TECH005,1.82,True,Completed,None,Planned maintenance completed
+MNT00101,AST0053,,2026-08-19 05:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH014,3.84,True,Completed,None,Planned maintenance completed
+MNT00102,AST0054,,2026-08-26 17:00:00.000000000,Inspection,Routine equipment inspection,Motor,TECH007,1.44,True,Completed,None,Planned maintenance completed
+MNT00103,AST0054,,2026-06-29 01:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH012,3.2,True,Completed,None,Planned maintenance completed
+MNT00104,AST0054,,2026-06-10 19:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH011,0.81,True,Completed,None,Planned maintenance completed
+MNT00105,AST0055,,2026-07-23 04:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH007,2.74,True,Completed,None,Planned maintenance completed
+MNT00106,AST0055,,2026-07-02 19:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH014,1.73,True,Completed,None,Planned maintenance completed
+MNT00107,AST0056,,2026-08-24 01:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH012,2.3,True,Completed,None,Planned maintenance completed
+MNT00108,AST0056,,2026-08-28 16:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH001,3.29,True,Completed,None,Planned maintenance completed
+MNT00109,AST0057,,2026-06-03 20:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH014,2.67,True,Completed,None,Planned maintenance completed
+MNT00110,AST0057,,2026-08-19 10:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH015,0.95,True,Completed,Motor,Planned maintenance completed
+MNT00111,AST0058,,2026-07-08 11:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH003,2.94,True,Completed,None,Planned maintenance completed
+MNT00112,AST0058,,2026-06-28 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Impeller,TECH005,2.61,True,Completed,Impeller,Planned maintenance completed
+MNT00113,AST0059,,2026-07-30 12:00:00.000000000,Preventive,Scheduled preventive maintenance,Impeller,TECH010,0.92,True,Completed,None,Planned maintenance completed
+MNT00114,AST0060,,2026-08-13 01:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH015,1.63,True,Completed,Bearing,Planned maintenance completed
+MNT00115,AST0060,,2026-07-15 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH001,1.05,True,Completed,None,Planned maintenance completed
+MNT00116,AST0060,,2026-07-24 08:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH015,3.12,True,Completed,Motor,Planned maintenance completed
+MNT00117,AST0061,,2026-06-22 21:00:00.000000000,Inspection,Routine equipment inspection,Winding,TECH014,3.16,True,Completed,None,Planned maintenance completed
+MNT00118,AST0061,,2026-06-16 04:00:00.000000000,Preventive,Scheduled preventive maintenance,Winding,TECH007,0.63,True,Completed,None,Planned maintenance completed
+MNT00119,AST0062,,2026-08-13 22:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH006,3.54,True,Completed,None,Planned maintenance completed
+MNT00120,AST0062,,2026-07-21 15:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH007,3.08,True,Completed,Bearing,Planned maintenance completed
+MNT00121,AST0063,,2026-06-06 05:00:00.000000000,Preventive,Scheduled preventive maintenance,Fan Blade,TECH004,3.62,True,Completed,None,Planned maintenance completed
+MNT00122,AST0064,,2026-07-19 17:00:00.000000000,Preventive,Scheduled preventive maintenance,Roller Bearing,TECH015,2.54,True,Completed,None,Planned maintenance completed
+MNT00123,AST0064,,2026-08-04 05:00:00.000000000,Preventive,Scheduled preventive maintenance,Drive Motor,TECH011,2.63,True,Completed,Drive Motor,Planned maintenance completed
+MNT00124,AST0065,,2026-07-25 16:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH007,0.86,True,Completed,Belt,Planned maintenance completed
+MNT00125,AST0065,,2026-08-07 22:00:00.000000000,Preventive,Scheduled preventive maintenance,Roller Bearing,TECH015,3.45,True,Completed,Roller Bearing,Planned maintenance completed
+MNT00126,AST0065,,2026-07-09 07:00:00.000000000,Preventive,Scheduled preventive maintenance,Roller Bearing,TECH011,3.64,True,Completed,None,Planned maintenance completed
+MNT00127,AST0066,,2026-08-07 21:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH009,2.84,True,Completed,None,Planned maintenance completed
+MNT00128,AST0066,,2026-07-29 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH006,1.48,True,Completed,None,Planned maintenance completed
+MNT00129,AST0066,,2026-08-15 10:00:00.000000000,Inspection,Routine equipment inspection,Fan Blade,TECH012,3.08,True,Completed,None,Planned maintenance completed
+MNT00130,AST0067,,2026-06-14 07:00:00.000000000,Preventive,Scheduled preventive maintenance,Impeller,TECH004,2.53,True,Completed,Impeller,Planned maintenance completed
+MNT00131,AST0068,,2026-07-08 13:00:00.000000000,Preventive,Scheduled preventive maintenance,Drive Motor,TECH010,2.09,True,Completed,None,Planned maintenance completed
+MNT00132,AST0069,,2026-08-07 11:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH009,0.99,True,Completed,Bearing,Planned maintenance completed
+MNT00133,AST0069,,2026-08-20 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH001,1.94,True,Completed,None,Planned maintenance completed
+MNT00134,AST0069,,2026-06-10 19:00:00.000000000,Inspection,Routine equipment inspection,Seal,TECH008,0.94,True,Completed,None,Planned maintenance completed
+MNT00135,AST0070,,2026-08-05 10:00:00.000000000,Preventive,Scheduled preventive maintenance,Fan Blade,TECH013,3.09,True,Completed,None,Planned maintenance completed
+MNT00136,AST0070,,2026-07-07 08:00:00.000000000,Preventive,Scheduled preventive maintenance,Fan Blade,TECH005,1.21,True,Completed,Fan Blade,Planned maintenance completed
+MNT00137,AST0070,,2026-06-04 05:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH010,3.68,True,Completed,None,Planned maintenance completed
+MNT00138,AST0071,,2026-07-25 22:00:00.000000000,Inspection,Routine equipment inspection,Drive Motor,TECH013,3.65,True,Completed,None,Planned maintenance completed
+MNT00139,AST0071,,2026-07-14 14:00:00.000000000,Preventive,Scheduled preventive maintenance,Roller Bearing,TECH001,2.26,True,Completed,Roller Bearing,Planned maintenance completed
+MNT00140,AST0072,,2026-07-05 04:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH006,1.3,True,Completed,None,Planned maintenance completed
+MNT00141,AST0072,,2026-07-21 02:00:00.000000000,Inspection,Routine equipment inspection,Motor,TECH004,2.93,True,Completed,None,Planned maintenance completed
+MNT00142,AST0073,,2026-08-24 19:00:00.000000000,Preventive,Scheduled preventive maintenance,Drive Motor,TECH006,3.63,True,Completed,None,Planned maintenance completed
+MNT00143,AST0073,,2026-07-10 14:00:00.000000000,Inspection,Routine equipment inspection,Belt,TECH006,0.62,True,Completed,None,Planned maintenance completed
+MNT00144,AST0074,,2026-08-17 17:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH015,0.86,True,Completed,None,Planned maintenance completed
+MNT00145,AST0074,,2026-08-25 22:00:00.000000000,Inspection,Routine equipment inspection,Belt,TECH013,2.39,True,Completed,None,Planned maintenance completed
+MNT00146,AST0075,,2026-06-06 09:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH004,2.74,True,Completed,None,Planned maintenance completed
+MNT00147,AST0076,,2026-08-10 03:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH006,3.86,True,Completed,None,Planned maintenance completed
+MNT00148,AST0076,,2026-07-04 22:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH013,3.82,True,Completed,Bearing,Planned maintenance completed
+MNT00149,AST0077,,2026-08-08 07:00:00.000000000,Preventive,Scheduled preventive maintenance,Electrical System,TECH004,3.76,True,Completed,None,Planned maintenance completed
+MNT00150,AST0078,,2026-06-06 06:00:00.000000000,Preventive,Scheduled preventive maintenance,Winding,TECH009,3.2,True,Completed,None,Planned maintenance completed
+MNT00151,AST0078,,2026-07-30 14:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH014,0.9,True,Completed,None,Planned maintenance completed
+MNT00152,AST0079,,2026-08-17 06:00:00.000000000,Inspection,Routine equipment inspection,Seal,TECH008,2.32,True,Completed,None,Planned maintenance completed
+MNT00153,AST0080,,2026-07-26 12:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH010,1.22,True,Completed,None,Planned maintenance completed
+MNT00154,AST0080,,2026-06-24 22:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH002,2.38,True,Completed,None,Planned maintenance completed
+MNT00155,AST0081,,2026-07-10 02:00:00.000000000,Preventive,Scheduled preventive maintenance,Roller Bearing,TECH008,2.08,True,Completed,Roller Bearing,Planned maintenance completed
+MNT00156,AST0081,,2026-07-21 03:00:00.000000000,Preventive,Scheduled preventive maintenance,Drive Motor,TECH013,0.62,True,Completed,None,Planned maintenance completed
+MNT00157,AST0082,,2026-08-02 04:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH001,1.12,True,Completed,None,Planned maintenance completed
+MNT00158,AST0082,,2026-06-15 05:00:00.000000000,Preventive,Scheduled preventive maintenance,Electrical System,TECH001,3.99,True,Completed,None,Planned maintenance completed
+MNT00159,AST0083,,2026-07-10 15:00:00.000000000,Preventive,Scheduled preventive maintenance,Roller Bearing,TECH001,1.72,True,Completed,None,Planned maintenance completed
+MNT00160,AST0084,,2026-08-26 01:00:00.000000000,Preventive,Scheduled preventive maintenance,Fan Blade,TECH002,3.21,True,Completed,None,Planned maintenance completed
+MNT00161,AST0085,,2026-08-10 21:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH013,1.04,True,Completed,Motor,Planned maintenance completed
+MNT00162,AST0085,,2026-07-04 07:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH012,1.45,True,Completed,None,Planned maintenance completed
+MNT00163,AST0086,,2026-08-15 23:00:00.000000000,Inspection,Routine equipment inspection,Seal,TECH008,3.53,True,Completed,None,Planned maintenance completed
+MNT00164,AST0086,,2026-08-17 10:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH008,1.19,True,Completed,None,Planned maintenance completed
+MNT00165,AST0087,,2026-07-24 15:00:00.000000000,Inspection,Routine equipment inspection,Winding,TECH008,3.32,True,Completed,None,Planned maintenance completed
+MNT00166,AST0088,,2026-06-19 19:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH005,2.84,True,Completed,None,Planned maintenance completed
+MNT00167,AST0088,,2026-07-05 06:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH001,0.8,True,Completed,None,Planned maintenance completed
+MNT00168,AST0089,,2026-07-09 02:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH001,2.75,True,Completed,None,Planned maintenance completed
+MNT00169,AST0090,,2026-07-02 01:00:00.000000000,Preventive,Scheduled preventive maintenance,Lubrication System,TECH012,1.83,True,Completed,None,Planned maintenance completed
+MNT00170,AST0090,,2026-07-04 12:00:00.000000000,Inspection,Routine equipment inspection,Seal,TECH009,3.21,True,Completed,None,Planned maintenance completed
+MNT00171,AST0091,,2026-08-03 11:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH010,3.17,True,Completed,Seal,Planned maintenance completed
+MNT00172,AST0091,,2026-08-27 18:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH002,2.15,True,Completed,Seal,Planned maintenance completed
+MNT00173,AST0092,,2026-06-10 20:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH011,1.4,True,Completed,Seal,Planned maintenance completed
+MNT00174,AST0093,,2026-08-26 12:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH006,2.92,True,Completed,None,Planned maintenance completed
+MNT00175,AST0093,,2026-08-27 01:00:00.000000000,Inspection,Routine equipment inspection,Belt,TECH001,1.46,True,Completed,None,Planned maintenance completed
+MNT00176,AST0094,,2026-06-25 11:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH011,0.87,True,Completed,Motor,Planned maintenance completed
+MNT00177,AST0094,,2026-06-27 21:00:00.000000000,Inspection,Routine equipment inspection,Motor,TECH012,2.59,True,Completed,None,Planned maintenance completed
+MNT00178,AST0095,,2026-08-11 04:00:00.000000000,Preventive,Scheduled preventive maintenance,Fan Blade,TECH010,1.97,True,Completed,None,Planned maintenance completed
+MNT00179,AST0095,,2026-06-06 09:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH004,3.08,True,Completed,Bearing,Planned maintenance completed
+MNT00180,AST0096,,2026-07-25 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Roller Bearing,TECH007,1.74,True,Completed,None,Planned maintenance completed
+MNT00181,AST0096,,2026-07-26 13:00:00.000000000,Preventive,Scheduled preventive maintenance,Drive Motor,TECH006,1.89,True,Completed,None,Planned maintenance completed
+MNT00182,AST0097,,2026-07-02 06:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH001,1.07,True,Completed,None,Planned maintenance completed
+MNT00183,AST0097,,2026-06-16 04:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH005,1.67,True,Completed,None,Planned maintenance completed
+MNT00184,AST0098,,2026-08-09 08:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH009,2.97,True,Completed,None,Planned maintenance completed
+MNT00185,AST0099,,2026-07-23 04:00:00.000000000,Inspection,Routine equipment inspection,Motor,TECH002,1.45,True,Completed,None,Planned maintenance completed
+MNT00186,AST0100,,2026-07-14 08:00:00.000000000,Preventive,Scheduled preventive maintenance,Drive Motor,TECH012,2.92,True,Completed,None,Planned maintenance completed
+MNT00187,AST0101,,2026-08-14 23:00:00.000000000,Inspection,Routine equipment inspection,Electrical System,TECH007,3.32,True,Completed,None,Planned maintenance completed
+MNT00188,AST0101,,2026-06-30 13:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH011,3.66,True,Completed,None,Planned maintenance completed
+MNT00189,AST0102,,2026-06-02 22:00:00.000000000,Inspection,Routine equipment inspection,Winding,TECH001,2.56,True,Completed,None,Planned maintenance completed
+MNT00190,AST0102,,2026-06-11 09:00:00.000000000,Preventive,Scheduled preventive maintenance,Electrical System,TECH009,0.62,True,Completed,None,Planned maintenance completed
+MNT00191,AST0102,,2026-08-03 09:00:00.000000000,Preventive,Scheduled preventive maintenance,Electrical System,TECH014,3.8,True,Completed,None,Planned maintenance completed
+MNT00192,AST0103,,2026-08-01 02:00:00.000000000,Preventive,Scheduled preventive maintenance,Impeller,TECH008,2.76,True,Completed,None,Planned maintenance completed
+MNT00193,AST0104,,2026-07-17 17:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH007,2.94,True,Completed,None,Planned maintenance completed
+MNT00194,AST0105,,2026-07-28 04:00:00.000000000,Preventive,Scheduled preventive maintenance,Winding,TECH013,1.62,True,Completed,None,Planned maintenance completed
+MNT00195,AST0105,,2026-06-13 22:00:00.000000000,Preventive,Scheduled preventive maintenance,Electrical System,TECH007,3.55,True,Completed,Electrical System,Planned maintenance completed
+MNT00196,AST0106,,2026-08-07 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Roller Bearing,TECH013,0.75,True,Completed,Roller Bearing,Planned maintenance completed
+MNT00197,AST0107,,2026-06-11 04:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH015,2.7,True,Completed,None,Planned maintenance completed
+MNT00198,AST0107,,2026-07-09 08:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH014,1.97,True,Completed,None,Planned maintenance completed
+MNT00199,AST0108,,2026-06-16 15:00:00.000000000,Preventive,Scheduled preventive maintenance,Winding,TECH005,3.48,True,Completed,None,Planned maintenance completed
+MNT00200,AST0109,,2026-08-23 06:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH004,0.88,True,Completed,None,Planned maintenance completed
+MNT00201,AST0110,,2026-08-27 20:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH006,0.81,True,Completed,None,Planned maintenance completed
+MNT00202,AST0111,,2026-06-01 10:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH009,2.65,True,Completed,None,Planned maintenance completed
+MNT00203,AST0111,,2026-07-03 03:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH006,1.91,True,Completed,None,Planned maintenance completed
+MNT00204,AST0111,,2026-07-28 21:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH009,0.66,True,Completed,None,Planned maintenance completed
+MNT00205,AST0112,,2026-08-14 20:00:00.000000000,Inspection,Routine equipment inspection,Seal,TECH001,3.89,True,Completed,None,Planned maintenance completed
+MNT00206,AST0113,,2026-08-14 00:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH002,1.41,True,Completed,None,Planned maintenance completed
+MNT00207,AST0113,,2026-06-01 02:00:00.000000000,Preventive,Scheduled preventive maintenance,Roller Bearing,TECH015,1.29,True,Completed,Roller Bearing,Planned maintenance completed
+MNT00208,AST0114,,2026-07-28 12:00:00.000000000,Inspection,Routine equipment inspection,Winding,TECH008,2.1,True,Completed,None,Planned maintenance completed
+MNT00209,AST0115,,2026-07-21 18:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH015,3.48,True,Completed,Belt,Planned maintenance completed
+MNT00210,AST0116,,2026-07-10 18:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH008,1.93,True,Completed,None,Planned maintenance completed
+MNT00211,AST0116,,2026-07-20 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH013,2.36,True,Completed,None,Planned maintenance completed
+MNT00212,AST0117,,2026-07-18 09:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH013,2.18,True,Completed,None,Planned maintenance completed
+MNT00213,AST0117,,2026-07-27 02:00:00.000000000,Inspection,Routine equipment inspection,Winding,TECH013,2.4,True,Completed,None,Planned maintenance completed
+MNT00214,AST0117,,2026-07-24 13:00:00.000000000,Preventive,Scheduled preventive maintenance,Electrical System,TECH011,3.54,True,Completed,Electrical System,Planned maintenance completed
+MNT00215,AST0118,,2026-06-16 02:00:00.000000000,Preventive,Scheduled preventive maintenance,Fan Blade,TECH015,2.94,True,Completed,None,Planned maintenance completed
+MNT00216,AST0118,,2026-06-30 03:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH009,3.59,True,Completed,None,Planned maintenance completed
+MNT00217,AST0118,,2026-06-18 17:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH007,3.37,True,Completed,Bearing,Planned maintenance completed
+MNT00218,AST0119,,2026-06-25 12:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH002,1.41,True,Completed,None,Planned maintenance completed
+MNT00219,AST0120,,2026-07-18 08:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH012,2.71,True,Completed,None,Planned maintenance completed
+MNT00220,AST0121,,2026-07-12 23:00:00.000000000,Inspection,Routine equipment inspection,Drive Motor,TECH007,1.49,True,Completed,None,Planned maintenance completed
+MNT00221,AST0122,,2026-07-30 19:00:00.000000000,Inspection,Routine equipment inspection,Motor,TECH005,1.13,True,Completed,None,Planned maintenance completed
+MNT00222,AST0122,,2026-07-21 19:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH011,2.91,True,Completed,Motor,Planned maintenance completed
+MNT00223,AST0123,,2026-07-07 21:00:00.000000000,Inspection,Routine equipment inspection,Fan Blade,TECH008,0.7,True,Completed,None,Planned maintenance completed
+MNT00224,AST0124,,2026-06-30 07:00:00.000000000,Inspection,Routine equipment inspection,Electrical System,TECH004,3.89,True,Completed,None,Planned maintenance completed
+MNT00225,AST0125,,2026-07-13 22:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH015,0.58,True,Completed,None,Planned maintenance completed
+MNT00226,AST0125,,2026-06-24 17:00:00.000000000,Inspection,Routine equipment inspection,Electrical System,TECH014,2.06,True,Completed,None,Planned maintenance completed
+MNT00227,AST0126,,2026-06-02 14:00:00.000000000,Inspection,Routine equipment inspection,Electrical System,TECH013,3.28,True,Completed,None,Planned maintenance completed
+MNT00228,AST0126,,2026-08-15 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Winding,TECH011,3.2,True,Completed,Winding,Planned maintenance completed
+MNT00229,AST0127,,2026-07-12 04:00:00.000000000,Inspection,Routine equipment inspection,Seal,TECH005,3.68,True,Completed,None,Planned maintenance completed
+MNT00230,AST0128,,2026-08-22 08:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH012,3.94,True,Completed,None,Planned maintenance completed
+MNT00231,AST0128,,2026-08-22 12:00:00.000000000,Preventive,Scheduled preventive maintenance,Electrical System,TECH012,0.61,True,Completed,None,Planned maintenance completed
+MNT00232,AST0129,,2026-08-06 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Winding,TECH008,1.21,True,Completed,Winding,Planned maintenance completed
+MNT00233,AST0129,,2026-08-11 05:00:00.000000000,Inspection,Routine equipment inspection,Winding,TECH003,3.16,True,Completed,None,Planned maintenance completed
+MNT00234,AST0130,,2026-08-04 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH009,2.66,True,Completed,None,Planned maintenance completed
+MNT00235,AST0130,,2026-07-23 11:00:00.000000000,Preventive,Scheduled preventive maintenance,Fan Blade,TECH015,1.2,True,Completed,None,Planned maintenance completed
+MNT00236,AST0131,,2026-07-27 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH005,3.95,True,Completed,Motor,Planned maintenance completed
+MNT00237,AST0131,,2026-07-26 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH011,2.18,True,Completed,None,Planned maintenance completed
+MNT00238,AST0132,,2026-06-05 05:00:00.000000000,Inspection,Routine equipment inspection,Fan Blade,TECH006,0.64,True,Completed,None,Planned maintenance completed
+MNT00239,AST0132,,2026-08-05 16:00:00.000000000,Preventive,Scheduled preventive maintenance,Fan Blade,TECH015,0.86,True,Completed,None,Planned maintenance completed
+MNT00240,AST0133,,2026-06-30 17:00:00.000000000,Preventive,Scheduled preventive maintenance,Winding,TECH001,1.64,True,Completed,None,Planned maintenance completed
+MNT00241,AST0133,,2026-08-21 05:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH010,3.39,True,Completed,None,Planned maintenance completed
+MNT00242,AST0134,,2026-06-04 17:00:00.000000000,Preventive,Scheduled preventive maintenance,Impeller,TECH010,2.93,True,Completed,None,Planned maintenance completed
+MNT00243,AST0134,,2026-07-26 08:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH006,2.73,True,Completed,None,Planned maintenance completed
+MNT00244,AST0135,,2026-07-30 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Fan Blade,TECH002,2.98,True,Completed,None,Planned maintenance completed
+MNT00245,AST0135,,2026-07-17 03:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH011,2.64,True,Completed,None,Planned maintenance completed
+MNT00246,AST0136,,2026-06-01 21:00:00.000000000,Preventive,Scheduled preventive maintenance,Impeller,TECH012,2.18,True,Completed,Impeller,Planned maintenance completed
+MNT00247,AST0136,,2026-07-11 10:00:00.000000000,Preventive,Scheduled preventive maintenance,Impeller,TECH013,0.71,True,Completed,Impeller,Planned maintenance completed
+MNT00248,AST0136,,2026-07-23 18:00:00.000000000,Preventive,Scheduled preventive maintenance,Impeller,TECH013,1.65,True,Completed,None,Planned maintenance completed
+MNT00249,AST0137,,2026-06-29 22:00:00.000000000,Inspection,Routine equipment inspection,Electrical System,TECH006,1.07,True,Completed,None,Planned maintenance completed
+MNT00250,AST0138,,2026-06-13 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH003,2.23,True,Completed,Bearing,Planned maintenance completed
+MNT00251,AST0138,,2026-08-29 04:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH012,0.61,True,Completed,None,Planned maintenance completed
+MNT00252,AST0139,,2026-08-22 09:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH005,3.46,True,Completed,None,Planned maintenance completed
+MNT00253,AST0140,,2026-07-10 19:00:00.000000000,Preventive,Scheduled preventive maintenance,Winding,TECH004,3.53,True,Completed,None,Planned maintenance completed
+MNT00254,AST0141,,2026-07-31 01:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH010,2.79,True,Completed,None,Planned maintenance completed
+MNT00255,AST0142,,2026-06-23 01:00:00.000000000,Preventive,Scheduled preventive maintenance,Motor,TECH010,3.43,True,Completed,Motor,Planned maintenance completed
+MNT00256,AST0142,,2026-06-20 21:00:00.000000000,Preventive,Scheduled preventive maintenance,Lubrication System,TECH002,2.71,True,Completed,None,Planned maintenance completed
+MNT00257,AST0142,,2026-06-24 00:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH014,0.84,True,Completed,None,Planned maintenance completed
+MNT00258,AST0143,,2026-06-06 09:00:00.000000000,Preventive,Scheduled preventive maintenance,Lubrication System,TECH009,1.07,True,Completed,None,Planned maintenance completed
+MNT00259,AST0143,,2026-07-23 04:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH008,1.64,True,Completed,None,Planned maintenance completed
+MNT00260,AST0144,,2026-06-27 05:00:00.000000000,Preventive,Scheduled preventive maintenance,Seal,TECH012,1.66,True,Completed,None,Planned maintenance completed
+MNT00261,AST0144,,2026-07-24 08:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH011,1.37,True,Completed,None,Planned maintenance completed
+MNT00262,AST0145,,2026-08-23 11:00:00.000000000,Preventive,Scheduled preventive maintenance,Belt,TECH012,2.62,True,Completed,None,Planned maintenance completed
+MNT00263,AST0145,,2026-08-08 23:00:00.000000000,Preventive,Scheduled preventive maintenance,Roller Bearing,TECH013,3.54,True,Completed,Roller Bearing,Planned maintenance completed
+MNT00264,AST0145,,2026-07-11 08:00:00.000000000,Preventive,Scheduled preventive maintenance,Roller Bearing,TECH001,1.31,True,Completed,Roller Bearing,Planned maintenance completed
+MNT00265,AST0146,,2026-07-16 02:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH012,0.86,True,Completed,None,Planned maintenance completed
+MNT00266,AST0147,,2026-07-22 15:00:00.000000000,Inspection,Routine equipment inspection,Motor,TECH002,0.52,True,Completed,None,Planned maintenance completed
+MNT00267,AST0148,,2026-07-22 22:00:00.000000000,Inspection,Routine equipment inspection,Bearing,TECH002,2.3,True,Completed,None,Planned maintenance completed
+MNT00268,AST0149,,2026-08-09 05:00:00.000000000,Preventive,Scheduled preventive maintenance,Bearing,TECH012,1.0,True,Completed,None,Planned maintenance completed
+MNT00269,AST0150,,2026-06-06 08:00:00.000000000,Inspection,Routine equipment inspection,Lubrication System,TECH006,2.85,True,Completed,None,Planned maintenance completed
+MNT00270,AST0150,,2026-06-04 13:00:00.000000000,Inspection,Routine equipment inspection,Lubrication System,TECH007,2.92,True,Completed,None,Planned maintenance completed
+MNT00271,AST0005,FLR0001,2026-08-29 06:55:11.522379907,Corrective,Electrical Fault,Electrical System,TECH002,2.42,False,Completed,Electrical System,Maintenance performed for FLR0001
+MNT00272,AST0009,FLR0002,2026-07-03 05:34:00.937742718,Corrective,Motor Failure,Motor,TECH012,2.71,False,Completed,Motor,Maintenance performed for FLR0002
+MNT00273,AST0009,FLR0003,2026-08-13 04:40:26.982557533,Corrective,Motor Failure,Motor,TECH001,2.11,False,Completed,None,Maintenance performed for FLR0003
+MNT00274,AST0009,FLR0004,2026-07-21 11:03:31.614557367,Emergency,Excessive Vibration,Impeller,TECH005,18.87,False,Completed,Impeller,Maintenance performed for FLR0004
+MNT00275,AST0018,FLR0005,2026-08-12 01:24:52.000695608,Corrective,Pressure Loss,Seal,TECH006,7.86,False,Completed,Seal,Maintenance performed for FLR0005
+MNT00276,AST0020,FLR0006,2026-07-02 03:26:34.505973844,Corrective,Motor Failure,Motor,TECH013,10.86,False,Completed,None,Maintenance performed for FLR0006
+MNT00277,AST0025,FLR0007,2026-08-25 21:11:02.204034788,Corrective,Bearing Failure,Bearing,TECH004,0.94,False,Completed,None,Maintenance performed for FLR0007
+MNT00278,AST0025,FLR0008,2026-08-09 05:41:21.907245188,Corrective,Bearing Failure,Bearing,TECH003,3.86,False,Completed,None,Maintenance performed for FLR0008
+MNT00279,AST0029,FLR0009,2026-07-21 21:16:45.920216208,Emergency,Mechanical Wear,Belt,TECH003,29.95,False,Completed,None,Maintenance performed for FLR0009
+MNT00280,AST0038,FLR0010,2026-07-26 01:30:30.158444797,Corrective,Overheating,Winding,TECH007,2.66,False,Completed,Winding,Maintenance performed for FLR0010
+MNT00281,AST0041,FLR0011,2026-07-07 11:16:17.741916724,Emergency,Motor Failure,Motor,TECH007,14.5,False,Completed,Motor,Maintenance performed for FLR0011
+MNT00282,AST0041,FLR0012,2026-06-25 04:21:46.425519205,Corrective,Excessive Vibration,Fan Blade,TECH001,1.12,False,Completed,Fan Blade,Maintenance performed for FLR0012
+MNT00283,AST0045,FLR0013,2026-08-06 10:08:26.845766804,Corrective,Motor Failure,Motor,TECH010,0.5,False,Completed,Motor,Maintenance performed for FLR0013
+MNT00284,AST0053,FLR0014,2026-07-09 14:27:05.333053964,Corrective,Electrical Fault,Electrical System,TECH002,0.91,False,Completed,Electrical System,Maintenance performed for FLR0014
+MNT00285,AST0061,FLR0015,2026-07-21 22:59:17.169591307,Corrective,Bearing Failure,Bearing,TECH002,1.73,False,Completed,None,Maintenance performed for FLR0015
+MNT00286,AST0061,FLR0016,2026-08-24 13:02:48.955347999,Corrective,Overheating,Winding,TECH012,4.25,False,Completed,Winding,Maintenance performed for FLR0016
+MNT00287,AST0067,FLR0017,2026-07-01 05:48:31.390055596,Corrective,Excessive Vibration,Impeller,TECH004,3.48,False,Completed,Impeller,Maintenance performed for FLR0017
+MNT00288,AST0074,FLR0018,2026-06-29 06:31:46.718752710,Corrective,Mechanical Wear,Belt,TECH002,2.19,False,Completed,None,Maintenance performed for FLR0018
+MNT00289,AST0075,FLR0019,2026-07-21 16:55:59.127245839,Corrective,Motor Failure,Motor,TECH011,4.85,False,Completed,None,Maintenance performed for FLR0019
+MNT00290,AST0078,FLR0020,2026-06-18 23:16:42.098812204,Corrective,Overheating,Winding,TECH009,3.55,False,Completed,None,Maintenance performed for FLR0020
+MNT00291,AST0080,FLR0021,2026-06-14 10:42:18.356599324,Corrective,Overheating,Bearing,TECH013,2.51,False,Completed,Bearing,Maintenance performed for FLR0021
+MNT00292,AST0081,FLR0022,2026-08-08 10:34:06.906277736,Corrective,Mechanical Wear,Belt,TECH005,4.16,False,Completed,Belt,Maintenance performed for FLR0022
+MNT00293,AST0085,FLR0023,2026-08-21 21:19:05.784176485,Corrective,Excessive Vibration,Fan Blade,TECH003,5.17,False,Completed,None,Maintenance performed for FLR0023
+MNT00294,AST0095,FLR0024,2026-07-22 23:25:42.582719046,Emergency,Excessive Vibration,Fan Blade,TECH002,29.33,False,Completed,None,Maintenance performed for FLR0024
+MNT00295,AST0097,FLR0025,2026-08-18 06:16:20.424009903,Corrective,Excessive Vibration,Impeller,TECH011,3.14,False,Completed,Impeller,Maintenance performed for FLR0025
+MNT00296,AST0097,FLR0026,2026-06-05 07:42:43.505831325,Corrective,Excessive Vibration,Impeller,TECH015,0.7,False,Completed,None,Maintenance performed for FLR0026
+MNT00297,AST0100,FLR0027,2026-07-02 00:54:32.124533252,Corrective,Motor Failure,Drive Motor,TECH010,3.04,False,Completed,Drive Motor,Maintenance performed for FLR0027
+MNT00298,AST0100,FLR0028,2026-06-08 12:41:29.658603814,Corrective,Mechanical Wear,Belt,TECH006,1.18,False,Completed,Belt,Maintenance performed for FLR0028
+MNT00299,AST0100,FLR0029,2026-06-07 15:18:48.058319109,Corrective,Mechanical Wear,Belt,TECH011,0.55,False,Completed,Belt,Maintenance performed for FLR0029
+MNT00300,AST0103,FLR0030,2026-08-06 16:15:34.884200408,Emergency,Pressure Loss,Seal,TECH012,19.88,False,Completed,Seal,Maintenance performed for FLR0030
+MNT00301,AST0107,FLR0031,2026-07-03 20:06:19.076921308,Corrective,Pressure Loss,Seal,TECH010,5.78,False,Completed,Seal,Maintenance performed for FLR0031
+MNT00302,AST0109,FLR0032,2026-07-22 13:36:10.429007994,Corrective,Bearing Failure,Roller Bearing,TECH001,4.47,False,Completed,None,Maintenance performed for FLR0032
+MNT00303,AST0115,FLR0033,2026-08-25 09:08:17.752546154,Emergency,Mechanical Wear,Belt,TECH003,38.73,False,Completed,Belt,Maintenance performed for FLR0033
+MNT00304,AST0133,FLR0034,2026-08-26 13:26:30.852521512,Emergency,Bearing Failure,Bearing,TECH003,15.37,False,Completed,None,Maintenance performed for FLR0034
+MNT00305,AST0133,FLR0035,2026-07-06 12:35:22.100883133,Emergency,Bearing Failure,Bearing,TECH015,23.73,False,Completed,Bearing,Maintenance performed for FLR0035
+MNT00306,AST0139,FLR0036,2026-07-01 14:07:55.680394825,Corrective,Pressure Loss,Seal,TECH005,0.66,False,Completed,Seal,Maintenance performed for FLR0036
+MNT00307,AST0139,FLR0037,2026-08-27 23:36:32.146499523,Corrective,Bearing Failure,Bearing,TECH012,4.44,False,Completed,Bearing,Maintenance performed for FLR0037
+MNT00308,AST0142,FLR0038,2026-07-28 15:01:23.513220998,Corrective,Bearing Failure,Bearing,TECH013,2.72,False,Completed,Bearing,Maintenance performed for FLR0038
+MNT00309,AST0142,FLR0039,2026-08-03 19:28:45.430525012,Corrective,Bearing Failure,Bearing,TECH003,2.09,False,Completed,None,Maintenance performed for FLR0039
+MNT00310,AST0147,FLR0040,2026-06-27 05:29:20.133378092,Corrective,Excessive Vibration,Fan Blade,TECH013,1.75,False,Completed,Fan Blade,Maintenance performed for FLR0040

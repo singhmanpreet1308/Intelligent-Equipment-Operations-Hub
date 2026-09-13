@@ -1,0 +1,4 @@
+Site_ID,Site_Name,Location,Region,Site_Type,Operational_Status,Commission_Date
+SITE001,Belfast Operations Plant,Belfast,Northern Ireland,Manufacturing,Active,2018-04-15
+SITE002,Larne Equipment Centre,Larne,Northern Ireland,Industrial,Active,2020-09-01
+SITE003,Dublin Operations Hub,Dublin,Ireland,Distribution,Active,2022-03-10
