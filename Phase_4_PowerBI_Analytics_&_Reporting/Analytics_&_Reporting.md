@@ -1,7 +1,7 @@
 # Phase 4 — Power BI Analytics & Reporting
 
-**Project:** Intelligent Equipment Operations Hub  
-**Status:** Completed, as confirmed by the user in the Phase 4 conversation.  
+**Project:** Intelligent Equipment Operations Hub
+**Status:** Completed, as confirmed by the user in the Phase 4 conversation.
 **Purpose:** Compact implementation record, measure reference, and validation runbook.
 
 This document records the completed conversation; it is not a fresh audit of the live Power BI or Fabric environment. SQL below is provided for repeatable validation and was not executed while preparing this document.
@@ -14,15 +14,15 @@ Phase 3 Gold data → EquipmentOperations_Warehouse (dbo)
     → DAX measures → three analytical pages + Home/navigation
 ```
 
-| Table | Grain / key | Purpose |
-|---|---|---|
-| dim_site | One site / Site_ID | Site filtering |
-| dim_asset | One asset / Asset_ID | Asset, type, criticality; Site_ID links to site |
-| fact_failure | One failure / Failure_ID | Failures, downtime, type, root cause |
-| fact_maintenance | One event / Maintenance_ID | Maintenance activity, components, planned status |
-| fact_work_order | One order / WorkOrder_ID | Priority, status, team, SLA, estimated/actual hours |
-| fact_cost | One cost record / Cost_ID | Operational cost |
-| dim_date | One calendar day / Date | Shared date filtering and operating-time denominator |
+| Table            | Grain / key                | Purpose                                              |
+| ---------------- | -------------------------- | ---------------------------------------------------- |
+| dim_site         | One site / Site_ID         | Site filtering                                       |
+| dim_asset        | One asset / Asset_ID       | Asset, type, criticality; Site_ID links to site      |
+| fact_failure     | One failure / Failure_ID   | Failures, downtime, type, root cause                 |
+| fact_maintenance | One event / Maintenance_ID | Maintenance activity, components, planned status     |
+| fact_work_order  | One order / WorkOrder_ID   | Priority, status, team, SLA, estimated/actual hours  |
+| fact_cost        | One cost record / Cost_ID  | Operational cost                                     |
+| dim_date         | One calendar day / Date    | Shared date filtering and operating-time denominator |
 
 The six business tables use Direct Lake on the Warehouse. `dim_date` was created as a semantic-model calculated table. Sensor telemetry remains outside this report's scope.
 
@@ -30,16 +30,16 @@ The six business tables use Direct Lake on the Warehouse. `dim_date` was created
 
 All recorded relationships are **active, one-to-many, single-direction**, filtering from the dimension to the many side. No fact-to-fact relationships are required.
 
-| One side | Many side |
-|---|---|
-| dim_site[Site_ID] | dim_asset[Site_ID] |
-| dim_asset[Asset_ID] | fact_failure[Asset_ID] |
-| dim_asset[Asset_ID] | fact_maintenance[Asset_ID] |
-| dim_asset[Asset_ID] | fact_work_order[Asset_ID] |
-| dim_asset[Asset_ID] | fact_cost[Asset_ID] |
-| dim_date[Date] | fact_failure[Failure_Date] |
-| dim_date[Date] | fact_maintenance[Maintenance_Date] |
-| dim_date[Date] | fact_cost[Cost_Date] |
+| One side            | Many side                          |
+| ------------------- | ---------------------------------- |
+| dim_site[Site_ID]   | dim_asset[Site_ID]                 |
+| dim_asset[Asset_ID] | fact_failure[Asset_ID]             |
+| dim_asset[Asset_ID] | fact_maintenance[Asset_ID]         |
+| dim_asset[Asset_ID] | fact_work_order[Asset_ID]          |
+| dim_asset[Asset_ID] | fact_cost[Asset_ID]                |
+| dim_date[Date]      | fact_failure[Failure_Date]         |
+| dim_date[Date]      | fact_maintenance[Maintenance_Date] |
+| dim_date[Date]      | fact_cost[Cost_Date]               |
 
 **Operational window:** 2026-05-30 through 2026-08-29, inclusive (**92 days**). This replaced the initial 2025–2027 calendar, which overstated potential operating hours. The observed failure-only window was narrower: 2026-06-05 through 2026-08-29.
 
@@ -73,31 +73,31 @@ Each row below is a separate measure definition. Counts use distinct business ID
 
 ### Core measures
 
-| Measure | DAX expression |
-|---|---|
-| Total Failures | `DISTINCTCOUNT(fact_failure[Failure_ID])` |
-| Total Downtime Hours | `SUM(fact_failure[Downtime_Hours])` |
+| Measure                  | DAX expression                                      |
+| ------------------------ | --------------------------------------------------- |
+| Total Failures           | `DISTINCTCOUNT(fact_failure[Failure_ID])`         |
+| Total Downtime Hours     | `SUM(fact_failure[Downtime_Hours])`               |
 | Total Maintenance Events | `DISTINCTCOUNT(fact_maintenance[Maintenance_ID])` |
-| Total Work Orders | `DISTINCTCOUNT(fact_work_order[WorkOrder_ID])` |
-| Total Cost | `SUM(fact_cost[Total_Cost])` |
+| Total Work Orders        | `DISTINCTCOUNT(fact_work_order[WorkOrder_ID])`    |
+| Total Cost               | `SUM(fact_cost[Total_Cost])`                      |
 
 ### Operational measures
 
-| Measure | DAX expression |
-|---|---|
-| MTTR Hours | `COALESCE(DIVIDE([Total Downtime Hours], [Total Failures]), 0)` |
-| Planned Maintenance % | `DIVIDE(CALCULATE([Total Maintenance Events], fact_maintenance[Planned_Flag] = TRUE()), [Total Maintenance Events], 0)` |
-| Open Work Orders | `COALESCE(CALCULATE([Total Work Orders], fact_work_order[WorkOrder_Status] = "Open"), 0)` |
-| Asset Count | `DISTINCTCOUNT(dim_asset[Asset_ID])` |
-| Selected Days | `COUNTROWS(VALUES(dim_date[Date]))` |
-| Potential Operating Hours | `[Asset Count] * [Selected Days] * 24` |
-| Availability % | `DIVIDE([Potential Operating Hours] - [Total Downtime Hours], [Potential Operating Hours], 0)` |
-| MTBF Hours | `DIVIDE([Potential Operating Hours] - [Total Downtime Hours], [Total Failures], 0)` |
-| Completed Work Orders | `CALCULATE([Total Work Orders], fact_work_order[WorkOrder_Status] = "Completed")` |
-| SLA Breached Work Orders | `CALCULATE([Total Work Orders], fact_work_order[SLA_Breached_Flag] = TRUE())` |
-| Average Actual Hours | `AVERAGE(fact_work_order[Actual_Hours])` |
-| Average Estimated Hours | `AVERAGE(fact_work_order[Estimated_Hours])` |
-| Average Hours Variance | `[Average Actual Hours] - [Average Estimated Hours]` |
+| Measure                   | DAX expression                                                                                                            |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| MTTR Hours                | `COALESCE(DIVIDE([Total Downtime Hours], [Total Failures]), 0)`                                                         |
+| Planned Maintenance %     | `DIVIDE(CALCULATE([Total Maintenance Events], fact_maintenance[Planned_Flag] = TRUE()), [Total Maintenance Events], 0)` |
+| Open Work Orders          | `COALESCE(CALCULATE([Total Work Orders], fact_work_order[WorkOrder_Status] = "Open"), 0)`                               |
+| Asset Count               | `DISTINCTCOUNT(dim_asset[Asset_ID])`                                                                                    |
+| Selected Days             | `COUNTROWS(VALUES(dim_date[Date]))`                                                                                     |
+| Potential Operating Hours | `[Asset Count] * [Selected Days] * 24`                                                                                  |
+| Availability %            | `DIVIDE([Potential Operating Hours] - [Total Downtime Hours], [Potential Operating Hours], 0)`                          |
+| MTBF Hours                | `DIVIDE([Potential Operating Hours] - [Total Downtime Hours], [Total Failures], 0)`                                     |
+| Completed Work Orders     | `CALCULATE([Total Work Orders], fact_work_order[WorkOrder_Status] = "Completed")`                                       |
+| SLA Breached Work Orders  | `CALCULATE([Total Work Orders], fact_work_order[SLA_Breached_Flag] = TRUE())`                                           |
+| Average Actual Hours      | `AVERAGE(fact_work_order[Actual_Hours])`                                                                                |
+| Average Estimated Hours   | `AVERAGE(fact_work_order[Estimated_Hours])`                                                                             |
+| Average Hours Variance    | `[Average Actual Hours] - [Average Estimated Hours]`                                                                    |
 
 **Interpretation and formatting:**
 
@@ -120,10 +120,10 @@ VAR AssetTable =
 RETURN MAXX(AssetTable, dim_asset[Asset_Name])
 ```
 
-| Measure | Substitute in the pattern |
-|---|---|
+| Measure                | Substitute in the pattern                                         |
+| ---------------------- | ----------------------------------------------------------------- |
 | Highest Downtime Asset | `"Downtime", [Total Downtime Hours]` and sort by `[Downtime]` |
-| Highest Cost Asset | `"Cost", [Total Cost]` and sort by `[Cost]` |
+| Highest Cost Asset     | `"Cost", [Total Cost]` and sort by `[Cost]`                   |
 
 These measures respect current filters. `TOPN` can return ties; `MAXX` selects one asset name from them. They do not list every tied asset or explicitly suppress no-activity results.
 
@@ -154,12 +154,12 @@ Use rank `<= 10` as the visual filter. Failure rank breaks ties by downtime, the
 
 ## 5. Completed report pages
 
-| Page | Content and interactions |
-|---|---|
-| **Executive Operations Overview** | Failure, downtime, availability, MTTR, MTBF and cost KPIs; failures by asset type, downtime trend, maintenance by component, cost by site, asset summary and highest-impact asset insights. Site and Date slicers. |
-| **Asset Reliability & Maintenance Analysis** | Reliability KPI row; ranked failures/downtime by asset; failure type and root-cause analysis; maintenance by component; Planned vs Unplanned donut using Planned_Status. Site, Asset Type, Asset Name and Date slicers. |
-| **Work Orders & Maintenance Operations** | Total, completed, open and SLA-breached orders; average actual hours and hours variance; priority, SLA breaches by team, estimated vs actual hours (clustered columns), and workload by team. Site, Asset Type, Priority and Date slicers; date limitation noted above. |
-| **Home / navigation** | Project landing page; Overview → Executive Operations Overview; Reliability & Maintenance → Asset Reliability & Maintenance Analysis; Work Orders → Work Orders & Maintenance Operations. Buttons use Action → Page navigation. |
+| Page                                               | Content and interactions                                                                                                                                                                                                                                                |
+| -------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Executive Operations Overview**            | Failure, downtime, availability, MTTR, MTBF and cost KPIs; failures by asset type, downtime trend, maintenance by component, cost by site, asset summary and highest-impact asset insights. Site and Date slicers.                                                      |
+| **Asset Reliability & Maintenance Analysis** | Reliability KPI row; ranked failures/downtime by asset; failure type and root-cause analysis; maintenance by component; Planned vs Unplanned donut using Planned_Status. Site, Asset Type, Asset Name and Date slicers.                                                 |
+| **Work Orders & Maintenance Operations**     | Total, completed, open and SLA-breached orders; average actual hours and hours variance; priority, SLA breaches by team, estimated vs actual hours (clustered columns), and workload by team. Site, Asset Type, Priority and Date slicers; date limitation noted above. |
+| **Home / navigation**                        | Project landing page; Overview → Executive Operations Overview; Reliability & Maintenance → Asset Reliability & Maintenance Analysis; Work Orders → Work Orders & Maintenance Operations. Buttons use Action → Page navigation.                                     |
 
 Navigation, KPI responses, and chart cross-filtering were included in final testing. The optional Cost & Operational Impact page was not required. AI Support is a later-phase placeholder, not a completed AI integration.
 
@@ -244,16 +244,15 @@ Also check asset-to-site orphans, null dimension labels, fact business-key dupli
 
 Checked items reflect the user's phase-completion confirmation; unchecked items preserve specific evidence gaps or future refresh checks.
 
-- [x] Direct Lake semantic model created on EquipmentOperations_Warehouse with six business tables plus dim_date.
-- [x] Site → asset → fact relationships and three documented date relationships configured.
-- [x] Failure_Date and Planned_Status added in the Warehouse and exposed in the model.
-- [x] Core, operational, insight and ranking measures created; corrected WorkOrder_Status naming used.
-- [x] Operational window aligned to 2026-05-30–2026-08-29; 24×7 denominator documented.
-- [x] Three analytical pages and Home/navigation completed.
-- [x] Navigation, slicer/cross-filter testing and headline reconciliation reported complete.
+- [X] Direct Lake semantic model created on EquipmentOperations_Warehouse with six business tables plus dim_date.
+- [X] Site → asset → fact relationships and three documented date relationships configured.
+- [X] Failure_Date and Planned_Status added in the Warehouse and exposed in the model.
+- [X] Core, operational, insight and ranking measures created; corrected WorkOrder_Status naming used.
+- [X] Operational window aligned to 2026-05-30–2026-08-29; 24×7 denominator documented.
+- [X] Three analytical pages and Home/navigation completed.
+- [X] Navigation, slicer/cross-filter testing and headline reconciliation reported complete.
 - [ ] Retain explicit diagnostic evidence resolving the reported Blank slicer members.
 - [ ] Before claiming date-filtered work-order reporting, implement and test its intended date relationship.
 - [ ] On the next full refresh, verify derived-column population, relationships, date coverage and KPI reconciliation; save SQL results as evidence.
 
 **Refresh sequence:** Finish the Phase 3 load → populate/verify derived columns → sync the model if schema changed → check relationships → update the operational window for new data → rerun reconciliation and interaction checks.
-
