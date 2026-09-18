@@ -2,6 +2,8 @@
 
 An enterprise **Industrial Operations Intelligence platform** using **Microsoft Fabric, Power BI, Power Platform, Dataverse, and Agentic AI** to monitor equipment performance, manage operational issues, automate workflows and approvals, and deliver AI-assisted operational insights across manufacturing sites.
 
+![1789773111225](image/README/1789773111225.jpg)
+
 ## Project Overview
 
 Industrial operations generate large volumes of equipment, sensor, failure, maintenance, work-order, and cost data. However, when this information is distributed across disconnected systems, operations teams can struggle to identify equipment risks, understand downtime drivers, prioritize maintenance activity, and track operational costs.
