@@ -1,41 +1,41 @@
 Failure_ID,Asset_ID,Failure_DateTime,Failure_Type,Failure_Component,Severity,Downtime_Hours,Detection_Method,Root_Cause,Production_Impact,Failure_Status
-FLR0001,AST0005,2026-08-29 03:00:00,Electrical Fault,Electrical System,Medium,3.17,Sensor Alert,Overload,Minor,Resolved
-FLR0002,AST0009,2026-07-03 03:00:00,Motor Failure,Motor,Medium,2.98,Operator Inspection,Seal Degradation,Minor,Resolved
-FLR0003,AST0009,2026-08-13 04:00:00,Motor Failure,Motor,Medium,2.37,Sensor Alert,Seal Degradation,Minor,Resolved
-FLR0004,AST0009,2026-07-21 10:00:00,Excessive Vibration,Impeller,Critical,17.81,Operator Inspection,Component Wear,Major,Resolved
-FLR0005,AST0018,2026-08-11 23:00:00,Pressure Loss,Seal,High,9.06,Sensor Alert,Lubrication Failure,Moderate,Resolved
-FLR0006,AST0020,2026-07-02 02:00:00,Motor Failure,Motor,High,10.38,Sensor Alert,Overload,Moderate,Resolved
-FLR0007,AST0025,2026-08-25 18:00:00,Bearing Failure,Bearing,Low,1.44,Sensor Alert,Seal Degradation,Minor,Resolved
-FLR0008,AST0025,2026-08-09 03:00:00,Bearing Failure,Bearing,Medium,4.39,Sensor Alert,Overload,Minor,Resolved
-FLR0009,AST0029,2026-07-21 18:00:00,Mechanical Wear,Belt,Critical,27.27,Operator Inspection,Overload,Major,Resolved
-FLR0010,AST0038,2026-07-25 22:00:00,Overheating,Winding,Medium,3.49,Sensor Alert,Electrical Degradation,Minor,Resolved
-FLR0011,AST0041,2026-07-07 11:00:00,Motor Failure,Motor,Critical,15.52,Predictive Alert,Seal Degradation,Major,Resolved
-FLR0012,AST0041,2026-06-25 02:00:00,Excessive Vibration,Fan Blade,Low,1.84,Predictive Alert,Component Wear,Minor,Resolved
-FLR0013,AST0045,2026-08-06 09:00:00,Motor Failure,Motor,Low,0.54,Sensor Alert,Lubrication Failure,Minor,Resolved
-FLR0014,AST0053,2026-07-09 12:00:00,Electrical Fault,Electrical System,Low,1.63,Predictive Alert,Misalignment,Minor,Resolved
-FLR0015,AST0061,2026-07-21 21:00:00,Bearing Failure,Bearing,Medium,2.27,Sensor Alert,Lubrication Failure,Minor,Resolved
-FLR0016,AST0061,2026-08-24 11:00:00,Overheating,Winding,High,5.62,Predictive Alert,Lubrication Failure,Moderate,Resolved
-FLR0017,AST0067,2026-07-01 05:00:00,Excessive Vibration,Impeller,Medium,4.31,Sensor Alert,Seal Degradation,Minor,Resolved
-FLR0018,AST0074,2026-06-29 04:00:00,Mechanical Wear,Belt,Medium,2.49,Sensor Alert,Electrical Degradation,Minor,Resolved
-FLR0019,AST0075,2026-07-21 14:00:00,Motor Failure,Motor,High,5.23,Predictive Alert,Misalignment,Moderate,Resolved
-FLR0020,AST0078,2026-06-18 23:00:00,Overheating,Winding,Medium,4.21,Scheduled Inspection,Seal Degradation,Minor,Resolved
-FLR0021,AST0080,2026-06-14 08:00:00,Overheating,Bearing,Medium,3.28,Operator Inspection,Seal Degradation,Minor,Resolved
-FLR0022,AST0081,2026-08-08 09:00:00,Mechanical Wear,Belt,High,5.31,Operator Inspection,Overload,Moderate,Resolved
-FLR0023,AST0085,2026-08-21 20:00:00,Excessive Vibration,Fan Blade,High,6.06,Sensor Alert,Seal Degradation,Moderate,Resolved
-FLR0024,AST0095,2026-07-22 21:00:00,Excessive Vibration,Fan Blade,Critical,34.66,Sensor Alert,Component Wear,Major,Resolved
-FLR0025,AST0097,2026-08-18 05:00:00,Excessive Vibration,Impeller,Medium,4.06,Operator Inspection,Seal Degradation,Minor,Resolved
-FLR0026,AST0097,2026-06-05 07:00:00,Excessive Vibration,Impeller,Low,0.96,Predictive Alert,Seal Degradation,Minor,Resolved
-FLR0027,AST0100,2026-07-01 22:00:00,Motor Failure,Drive Motor,Medium,4.46,Predictive Alert,Overload,Minor,Resolved
-FLR0028,AST0100,2026-06-08 09:00:00,Mechanical Wear,Belt,Low,1.9,Operator Inspection,Component Wear,Minor,Resolved
-FLR0029,AST0100,2026-06-07 13:00:00,Mechanical Wear,Belt,Low,1.04,Scheduled Inspection,Overload,Minor,Resolved
-FLR0030,AST0103,2026-08-06 16:00:00,Pressure Loss,Seal,Critical,18.9,Sensor Alert,Lubrication Failure,Major,Resolved
-FLR0031,AST0107,2026-07-03 19:00:00,Pressure Loss,Seal,High,7.04,Sensor Alert,Component Wear,Moderate,Resolved
-FLR0032,AST0109,2026-07-22 12:00:00,Bearing Failure,Roller Bearing,Medium,4.85,Scheduled Inspection,Seal Degradation,Minor,Resolved
-FLR0033,AST0115,2026-08-25 08:00:00,Mechanical Wear,Belt,Critical,35.04,Predictive Alert,Misalignment,Major,Resolved
-FLR0034,AST0133,2026-08-26 10:00:00,Bearing Failure,Bearing,Critical,14.44,Predictive Alert,Component Wear,Major,Resolved
-FLR0035,AST0133,2026-07-06 10:00:00,Bearing Failure,Bearing,Critical,24.17,Predictive Alert,Component Wear,Major,Resolved
-FLR0036,AST0139,2026-07-01 13:00:00,Pressure Loss,Seal,Low,0.9,Predictive Alert,Lubrication Failure,Minor,Resolved
-FLR0037,AST0139,2026-08-27 23:00:00,Bearing Failure,Bearing,High,5.87,Operator Inspection,Lubrication Failure,Moderate,Resolved
-FLR0038,AST0142,2026-07-28 14:00:00,Bearing Failure,Bearing,Medium,3.23,Scheduled Inspection,Electrical Degradation,Minor,Resolved
-FLR0039,AST0142,2026-08-03 17:00:00,Bearing Failure,Bearing,Medium,2.62,Predictive Alert,Misalignment,Minor,Resolved
-FLR0040,AST0147,2026-06-27 03:00:00,Excessive Vibration,Fan Blade,Medium,2.05,Predictive Alert,Lubrication Failure,Minor,Resolved
+FLR0001,AST0005,29/08/2026 03:00,Electrical Fault,Electrical System,Medium,3.17,Sensor Alert,Overload,Minor,Resolved
+FLR0002,AST0009,03/07/2026 03:00,Motor Failure,Motor,Medium,2.98,Operator Inspection,Seal Degradation,Minor,Resolved
+FLR0003,AST0009,13/08/2026 04:00,Motor Failure,Motor,Medium,2.37,Sensor Alert,Seal Degradation,Minor,Resolved
+FLR0004,AST0009,21/07/2026 10:00,Excessive Vibration,Impeller,Critical,17.81,Operator Inspection,Component Wear,Major,Resolved
+FLR0005,AST0018,11/08/2026 23:00,Pressure Loss,Seal,High,9.06,Sensor Alert,Lubrication Failure,Moderate,Resolved
+FLR0006,AST0020,02/07/2026 02:00,Motor Failure,Motor,High,10.38,Sensor Alert,Overload,Moderate,Resolved
+FLR0007,AST0025,25/08/2026 18:00,Bearing Failure,Bearing,Low,1.44,Sensor Alert,Seal Degradation,Minor,Resolved
+FLR0008,AST0025,09/08/2026 03:00,Bearing Failure,Bearing,Medium,4.39,Sensor Alert,Overload,Minor,Resolved
+FLR0009,AST0029,21/07/2026 18:00,Mechanical Wear,Belt,Critical,27.27,Operator Inspection,Overload,Major,Resolved
+FLR0010,AST0038,25/07/2026 22:00,Overheating,Winding,Medium,3.49,Sensor Alert,Electrical Degradation,Minor,Resolved
+FLR0011,AST0041,07/07/2026 11:00,Motor Failure,Motor,Critical,15.52,Predictive Alert,Seal Degradation,Major,Resolved
+FLR0012,AST0041,25/06/2026 02:00,Excessive Vibration,Fan Blade,Low,1.84,Predictive Alert,Component Wear,Minor,Resolved
+FLR0013,AST0045,06/08/2026 09:00,Motor Failure,Motor,Low,0.54,Sensor Alert,Lubrication Failure,Minor,Resolved
+FLR0014,AST0053,09/07/2026 12:00,Electrical Fault,Electrical System,Low,1.63,Predictive Alert,Misalignment,Minor,Resolved
+FLR0015,AST0061,21/07/2026 21:00,Bearing Failure,Bearing,Medium,2.27,Sensor Alert,Lubrication Failure,Minor,Resolved
+FLR0016,AST0061,24/08/2026 11:00,Overheating,Winding,High,5.62,Predictive Alert,Lubrication Failure,Moderate,Resolved
+FLR0017,AST0067,01/07/2026 05:00,Excessive Vibration,Impeller,Medium,4.31,Sensor Alert,Seal Degradation,Minor,Resolved
+FLR0018,AST0074,29/06/2026 04:00,Mechanical Wear,Belt,Medium,2.49,Sensor Alert,Electrical Degradation,Minor,Resolved
+FLR0019,AST0075,21/07/2026 14:00,Motor Failure,Motor,High,5.23,Predictive Alert,Misalignment,Moderate,Resolved
+FLR0020,AST0078,18/06/2026 23:00,Overheating,Winding,Medium,4.21,Scheduled Inspection,Seal Degradation,Minor,Resolved
+FLR0021,AST0080,14/06/2026 08:00,Overheating,Bearing,Medium,3.28,Operator Inspection,Seal Degradation,Minor,Resolved
+FLR0022,AST0081,08/08/2026 09:00,Mechanical Wear,Belt,High,5.31,Operator Inspection,Overload,Moderate,Resolved
+FLR0023,AST0085,21/08/2026 20:00,Excessive Vibration,Fan Blade,High,6.06,Sensor Alert,Seal Degradation,Moderate,Resolved
+FLR0024,AST0095,22/07/2026 21:00,Excessive Vibration,Fan Blade,Critical,34.66,Sensor Alert,Component Wear,Major,Resolved
+FLR0025,AST0097,18/08/2026 05:00,Excessive Vibration,Impeller,Medium,4.06,Operator Inspection,Seal Degradation,Minor,Resolved
+FLR0026,AST0097,05/06/2026 07:00,Excessive Vibration,Impeller,Low,0.96,Predictive Alert,Seal Degradation,Minor,Resolved
+FLR0027,AST0100,01/07/2026 22:00,Motor Failure,Drive Motor,Medium,4.46,Predictive Alert,Overload,Minor,Resolved
+FLR0028,AST0100,08/06/2026 09:00,Mechanical Wear,Belt,Low,1.9,Operator Inspection,Component Wear,Minor,Resolved
+FLR0029,AST0100,07/06/2026 13:00,Mechanical Wear,Belt,Low,1.04,Scheduled Inspection,Overload,Minor,Resolved
+FLR0030,AST0103,06/08/2026 16:00,Pressure Loss,Seal,Critical,18.9,Sensor Alert,Lubrication Failure,Major,Resolved
+FLR0031,AST0107,03/07/2026 19:00,Pressure Loss,Seal,High,7.04,Sensor Alert,Component Wear,Moderate,Resolved
+FLR0032,AST0109,22/07/2026 12:00,Bearing Failure,Roller Bearing,Medium,4.85,Scheduled Inspection,Seal Degradation,Minor,Resolved
+FLR0033,AST0115,25/08/2026 08:00,Mechanical Wear,Belt,Critical,35.04,Predictive Alert,Misalignment,Major,Resolved
+FLR0034,AST0133,26/08/2026 10:00,Bearing Failure,Bearing,Critical,14.44,Predictive Alert,Component Wear,Major,Resolved
+FLR0035,AST0133,06/07/2026 10:00,Bearing Failure,Bearing,Critical,24.17,Predictive Alert,Component Wear,Major,Resolved
+FLR0036,AST0139,01/07/2026 13:00,Pressure Loss,Seal,Low,0.9,Predictive Alert,Lubrication Failure,Minor,Resolved
+FLR0037,AST0139,27/08/2026 23:00,Bearing Failure,Bearing,High,5.87,Operator Inspection,Lubrication Failure,Moderate,Resolved
+FLR0038,AST0142,28/07/2026 14:00,Bearing Failure,Bearing,Medium,3.23,Scheduled Inspection,Electrical Degradation,Minor,Resolved
+FLR0039,AST0142,03/08/2026 17:00,Bearing Failure,Bearing,Medium,2.62,Predictive Alert,Misalignment,Minor,Resolved
+FLR0040,AST0147,27/06/2026 03:00,Excessive Vibration,Fan Blade,Medium,2.05,Predictive Alert,Lubrication Failure,Minor,Resolved
