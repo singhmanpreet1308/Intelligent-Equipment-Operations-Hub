@@ -694,30 +694,6 @@ After completion of Phase 4, the system can now:
 
 ---
 
-# Next Phase — Dataverse Operational Model
-
-The next stage moves the project from **analytics-only intelligence** toward an operational application architecture.
-
-Microsoft Dataverse will be used to create structured operational entities supporting processes such as:
-
-```text
-Equipment Issue
-      ↓
-Operational Investigation
-      ↓
-Work Order
-      ↓
-Approval
-      ↓
-Maintenance Action
-      ↓
-Resolution
-```
-
-This layer will later connect analytics with Power Apps, Power Automate, and AI-driven operational workflows.
-
----
-
 # Target End-State Architecture
 
 ```text
