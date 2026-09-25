@@ -1,468 +1,213 @@
 # Intelligent Equipment Operations Hub
 
-An enterprise **Industrial Operations Intelligence platform** using **Microsoft Fabric, Power BI, Power Platform, Dataverse, and Agentic AI** to monitor equipment performance, manage operational issues, automate workflows and approvals, and deliver AI-assisted operational insights across manufacturing sites.
+An enterprise **Industrial Operations Intelligence platform** built with **Microsoft Fabric, Power BI, Dataverse, Power Apps, and Power Automate** to monitor equipment performance, manage operational issues and maintenance, automate workflows, and support data-driven operational decision-making.
 
-![1789773111225](image/README/1789773111225.jpg)
+![1790342521055](image/README/1790342521055.png)
 
-## Project Overview
+Industrial operations generate large volumes of equipment, failure, maintenance, work-order, sensor, and cost data. When this information exists across disconnected systems, operations teams can struggle to identify equipment risks, prioritize maintenance, track failures, and respond quickly to operational issues.
 
-Industrial operations generate large volumes of equipment, sensor, failure, maintenance, work-order, and cost data. However, when this information is distributed across disconnected systems, operations teams can struggle to identify equipment risks, understand downtime drivers, prioritize maintenance activity, and track operational costs.
+The **Intelligent Equipment Operations Hub** brings these capabilities into one integrated Microsoft ecosystem.
 
-The **Intelligent Equipment Operations Hub** is designed as a centralized industrial operations platform that transforms raw operational data into an integrated decision-support system.
+The platform currently provides:
 
-The solution is being developed incrementally using the Microsoft data and Power Platform ecosystem.
+- Microsoft Fabric data engineering
+- Bronze → Silver → Gold medallion architecture
+- Fabric Lakehouse and Warehouse
+- Automated data pipelines
+- Power BI operational analytics
+- Dataverse operational data model
+- Canvas and Model-Driven Power Apps
+- Maintenance and issue-management workflows
+- Power Automate notifications and approvals
+- Automated overdue maintenance monitoring
 
-The completed implementation currently covers:
-
-- Business problem definition and operational requirements
-- Equipment operations data modelling
-- Data quality and validation
-- Microsoft Fabric Lakehouse architecture
-- Bronze, Silver, and Gold data layers
-- Enterprise analytical warehouse
-- Automated Fabric data pipelines
-- Power BI semantic modelling
-- Equipment reliability analytics
-- Failure and downtime analysis
-- Maintenance analysis
-- Work-order operational monitoring
-- Cost and operational KPI reporting
-
-Future phases extend the platform into:
-
-- Microsoft Dataverse operational applications
-- Power Apps
-- Power Automate workflows
-- Approval processes
-- Automated notifications
-- AI-assisted operational investigation
-- Agentic AI
+The next stage extends the platform with an **AI / Agentic Operations Assistant**.
 
 ---
 
 # Business Problem
 
-Manufacturing operations depend on reliable industrial equipment, but operational data often exists across multiple disconnected datasets and systems.
+Manufacturing operations require reliable equipment and fast responses to operational issues.
 
-This creates several challenges:
+Common challenges include:
 
-- Limited visibility into overall asset health
-- Difficulty identifying high-risk equipment
-- Reactive rather than proactive maintenance
-- Limited understanding of failure patterns
-- Poor visibility into equipment downtime
-- Difficulty prioritizing work orders
+- Limited visibility into asset health
+- Reactive maintenance
+- Repeated equipment failures
+- Unplanned downtime
 - Fragmented maintenance information
-- Limited cost transparency
-- Slow operational decision-making
-- Manual reporting and issue tracking
+- Difficulty prioritizing work
+- Manual issue management
+- Manual notifications and approvals
+- Limited operational cost visibility
 
-The project addresses these challenges by creating a centralized **Equipment Operations Intelligence Hub**.
-
----
-
-# Project Objectives
-
-The platform is designed to answer key operational questions such as:
-
-- Which assets are currently operational, degraded, or unavailable?
-- Which sites contain the highest concentration of equipment risk?
-- Which assets generate the most downtime?
-- What failure types occur most frequently?
-- Which equipment components fail repeatedly?
-- What are the main root causes of equipment failures?
-- How much production time is being lost because of failures?
-- How much maintenance is planned versus unplanned?
-- Which assets require the highest maintenance effort?
-- Which work orders are currently open or overdue?
-- Which work orders should be prioritized?
-- How efficiently are maintenance activities being completed?
-- What is the operational cost of failures and maintenance?
-- Which assets should operations teams investigate first?
+This project addresses these challenges by connecting **data, analytics, operational applications, and workflow automation** into one platform.
 
 ---
 
 # Solution Architecture
 
-The solution follows a layered enterprise architecture:
-
 ```text
-Operational Data Sources
-        │
-        ▼
-Microsoft Fabric Lakehouse
-        │
-        ├── Bronze Layer
-        │   Raw operational data
-        │
-        ├── Silver Layer
-        │   Cleaned and validated data
-        │
-        └── Gold Layer
-            Business-ready analytical tables
-                │
-                ▼
-        Fabric Data Pipeline
-                │
-                ▼
-     EquipmentOperations_Warehouse
-                │
-                ▼
-       Power BI Semantic Model
-                │
-                ▼
-       Operational Dashboards
-                │
-                ▼
-       Dataverse / Power Apps
-                │
-                ▼
-       Power Automate Workflows
-                │
-                ▼
-       AI Operational Assistant
+Operational Data
+      │
+      ▼
+Microsoft Fabric
+      │
+      ├── Bronze
+      ├── Silver
+      └── Gold
+      │
+      ▼
+Fabric Warehouse
+      │
+      ▼
+Power BI
+Operational Intelligence
+      │
+      ▼
+Microsoft Dataverse
+      │
+      ├───────────────┐
+      ▼               ▼
+Power Apps       Power Automate
+      │               │
+      └───────┬───────┘
+              ▼
+   Operational Workflow
+              │
+              ▼
+     AI / Agentic Layer
+         [Next Phase]
 ```
 
 ---
 
 # Technology Stack
 
-| Layer                  | Technology                     |
-| ---------------------- | ------------------------------ |
-| Data Processing        | Python, Pandas                 |
-| Data Platform          | Microsoft Fabric               |
-| Data Storage           | Fabric Lakehouse               |
-| Data Architecture      | Bronze / Silver / Gold         |
-| Data Warehouse         | Fabric Warehouse               |
-| Pipelines              | Microsoft Fabric Data Pipeline |
-| Query Language         | SQL                            |
-| Analytics              | Power BI                       |
-| Data Modelling         | Star Schema                    |
-| Measures               | DAX                            |
-| Operational Data Layer | Microsoft Dataverse            |
-| Application Layer      | Power Apps                     |
-| Workflow Automation    | Power Automate                 |
-| AI Layer               | Agentic AI / Copilot           |
-| Development            | Jupyter / Fabric Notebooks     |
-| Version Control        | Git / GitHub                   |
+| Area                 | Technologies                    |
+| -------------------- | ------------------------------- |
+| Data Processing      | Python, Pandas                  |
+| Data Platform        | Microsoft Fabric                |
+| Storage              | Fabric Lakehouse                |
+| Architecture         | Bronze / Silver / Gold          |
+| Data Warehouse       | Fabric Warehouse                |
+| Data Pipelines       | Fabric Data Pipeline            |
+| Querying             | SQL                             |
+| Analytics            | Power BI                        |
+| Semantic Modelling   | Star Schema, DAX                |
+| Operational Database | Microsoft Dataverse             |
+| Applications         | Power Apps                      |
+| Automation           | Power Automate                  |
+| AI                   | Agentic AI / Copilot — Planned |
+| Version Control      | Git, GitHub                     |
 
 ---
 
-# Core Operational Data
+# Project Phases
 
-The solution integrates multiple industrial operations datasets.
-
-## Assets
-
-Contains the industrial equipment master data.
-
-Typical information includes:
-
-- Asset ID
-- Asset name
-- Asset type
-- Site
-- Manufacturer
-- Installation information
-- Criticality
-- Operational status
-- Health score
-- Load percentage
-
----
-
-## Sensor Readings
-
-Contains telemetry generated by equipment.
-
-Sensor data can include:
-
-- Temperature
-- Pressure
-- Vibration
-- Power consumption
-- Load percentage
-- Equipment health measurements
-- Timestamped operational readings
-
----
-
-## Failures
-
-Tracks equipment failure events.
-
-Key fields include:
-
-- Failure ID
-- Asset ID
-- Failure DateTime
-- Failure Type
-- Failure Component
-- Severity
-- Downtime Hours
-- Detection Method
-- Root Cause
-- Production Impact
-
----
-
-## Maintenance
-
-Tracks equipment maintenance activities.
-
-Includes:
-
-- Maintenance ID
-- Asset ID
-- Related Failure ID
-- Maintenance Type
-- Maintenance Date
-- Duration
-- Technician information
-- Planned / Unplanned maintenance
-- Maintenance outcome
-
----
-
-## Work Orders
-
-Tracks operational maintenance work.
-
-Includes:
-
-- Work Order ID
-- Asset ID
-- Maintenance ID
-- Failure ID
-- Priority
-- Status
-- Created date
-- Scheduled date
-- Completion date
-- Work duration
-
----
-
-## Costs
-
-Tracks equipment-related operational expenditure.
-
-Includes:
-
-- Asset ID
-- Work Order ID
-- Maintenance ID
-- Failure ID
-- Labour cost
-- Parts cost
-- Additional operating cost
-- Total cost
-
----
-
-# Data Model
-
-The analytical layer uses a **star-schema-oriented architecture**.
-
-## Dimensions
-
-```text
-dim_site
-dim_asset
-dim_date
-```
-
-## Fact Tables
-
-```text
-fact_sensor_readings
-fact_failure
-fact_maintenance
-fact_work_order
-fact_cost
-```
-
-This architecture separates descriptive business entities from operational events, improving:
-
-- Query performance
-- Model scalability
-- DAX simplicity
-- Dashboard usability
-- Data governance
-- Analytical consistency
-
----
-
-# Project Development Phases
+| Phase   | Implementation                        | Status       |
+| ------- | ------------------------------------- | ------------ |
+| Phase 1 | Business Problem & Project Definition | ✅ Completed |
+| Phase 2 | Data Setup & Quality                  | ✅ Completed |
+| Phase 3 | Microsoft Fabric Data Foundation      | ✅ Completed |
+| Phase 4 | Power BI Analytics & Reporting        | ✅ Completed |
+| Phase 5 | Dataverse Operational Model           | ✅ Completed |
+| Phase 6 | Canvas & Model-Driven Power Apps      | ✅ Completed |
+| Phase 7 | Power Automate Workflows & Approvals  | ✅ Completed |
+| Phase 8 | AI / Agentic Operations Assistant     | ⏳ Next      |
 
 ---
 
 # Phase 1 — Business Problem & Project Definition
 
-**Status: Completed**
+Established the business and technical foundation of the solution.
 
-The first phase established the business context and analytical foundation for the platform.
+### Key Work
 
-### Completed Work
-
-- Defined the industrial equipment operations problem
-- Established project objectives
+- Defined business problem and objectives
 - Identified operational stakeholders
-- Documented the AS-IS operational process
-- Designed the TO-BE process
-- Defined major business questions
-- Created KPI definitions
+- Created AS-IS and TO-BE processes
+- Defined business questions
+- Designed KPI framework
 - Defined project scope
-- Defined out-of-scope functionality
-- Created business and technical requirements
+- Created functional requirements
 - Defined acceptance criteria
-- Completed Phase 1 validation gate
 
-### Main Outcome
+### Outcome
 
-A clearly defined operational intelligence use case with measurable business objectives and technical requirements.
+A structured operational intelligence use case with clear business objectives and implementation requirements.
 
 ---
 
 # Phase 2 — Data Setup & Quality
 
-**Status: Completed**
+Built the data-quality foundation before loading operational data into Microsoft Fabric.
 
-Phase 2 established reliable operational datasets and implemented validation controls before loading data into the analytical platform.
+Validation included:
 
-### Data Quality Checks
+- Primary and foreign-key integrity
+- Asset-to-site relationships
+- Failure and maintenance relationships
+- Work-order relationships
+- Valid criticality and asset status
+- Load percentage validation
+- Health score validation
+- Negative duration and cost checks
+- Date-sequence validation
+- Cost reconciliation
 
-The following checks were implemented.
+### Outcome
 
-### Foreign Key Validation
-
-Validated relationships including:
-
-```text
-assets.Site_ID
-sensor_readings.Asset_ID
-failures.Asset_ID
-maintenance.Asset_ID
-work_orders.Asset_ID
-costs.Asset_ID
-```
-
-Optional relationships were also validated:
-
-```text
-maintenance.Failure_ID
-work_orders.Maintenance_ID
-work_orders.Failure_ID
-costs.WorkOrder_ID
-costs.Maintenance_ID
-costs.Failure_ID
-```
-
-### Business Rule Validation
-
-Checks included:
-
-- Valid equipment criticality
-- Valid asset status
-- Valid load percentage
-- Valid health score
-- Non-negative downtime
-- Non-negative maintenance duration
-- Non-negative work-order hours
-- Non-negative cost values
-
-### Date Validation
-
-Operational chronology checks were implemented, including:
-
-- Work order scheduled before creation
-- Work order completion before creation
-- Maintenance occurring before related failure
-
-### Cost Validation
-
-Cost calculations were reconciled to identify mismatches between component costs and total operational cost.
-
-### Main Outcome
-
-A validated and relationally consistent operational dataset ready for enterprise data engineering.
+A clean and relationally consistent equipment dataset ready for analytics and data engineering.
 
 ---
 
 # Phase 3 — Microsoft Fabric Data Foundation
 
-**Status: Completed**
-
-Phase 3 migrated the operational data into **Microsoft Fabric** and established the project's enterprise analytical architecture.
-
----
+Implemented the core enterprise data platform using **Microsoft Fabric**.
 
 ## Medallion Architecture
 
-A standard **Bronze → Silver → Gold** architecture was implemented.
-
-### Bronze Layer
-
-Stores raw operational datasets with minimal transformation.
-
-Purpose:
-
-- Preserve source data
-- Maintain traceability
-- Enable reprocessing
-
----
-
-### Silver Layer
-
-Contains cleaned and standardized operational data.
-
-Processing includes:
-
-- Data type standardization
-- Null handling
-- Schema validation
-- Relationship validation
-- Business-rule validation
-- Duplicate handling
-- Data-quality controls
-
----
-
-### Gold Layer
-
-Contains analytics-ready business tables optimized for downstream reporting.
-
-Examples include:
-
 ```text
-GOLD_DIM_SITE
-GOLD_DIM_ASSET
-GOLD_FACT_SENSOR
-GOLD_FACT_FAILURE
-GOLD_FACT_MAINTENANCE
-GOLD_FACT_WORK_ORDER
-GOLD_FACT_COST
+Raw Data
+   │
+   ▼
+Bronze
+   │
+   ▼
+Silver
+Cleaned + Validated
+   │
+   ▼
+Gold
+Analytics Ready
 ```
 
----
+The Fabric Lakehouse contains operational datasets covering:
 
-# Fabric Warehouse
+- Sites
+- Assets
+- Sensors
+- Failures
+- Maintenance
+- Work Orders
+- Costs
 
-An enterprise warehouse was created:
+Gold-layer tables were loaded into:
 
 ```text
 EquipmentOperations_Warehouse
 ```
 
-Gold-layer datasets were loaded into the warehouse through Microsoft Fabric pipelines.
+using **Fabric Data Pipelines**.
 
-Example warehouse tables:
+The analytical model contains dimensions and facts such as:
 
 ```text
 dim_site
 dim_asset
 dim_date
+
 fact_sensor_readings
 fact_failure
 fact_maintenance
@@ -470,383 +215,442 @@ fact_work_order
 fact_cost
 ```
 
----
+SQL validation was performed after warehouse loading to verify row counts, duplicates, relationships, and data consistency.
 
-# Fabric Data Pipeline
+### Outcome
 
-Fabric Data Pipelines were configured to move Gold-layer data into the analytical warehouse.
-
-Example pipeline activity:
-
-```text
-Copy_Gold_Dim_Site
-```
-
-Equivalent copy activities were created for the remaining analytical tables.
-
-The pipeline architecture provides a repeatable mechanism for refreshing warehouse data when upstream operational information changes.
-
----
-
-# Data Validation
-
-Post-load SQL checks were performed to verify:
-
-- Row counts
-- Duplicate records
-- Primary keys
-- Fact-to-dimension relationships
-- Warehouse consistency
-
-Duplicate records discovered during pipeline development were investigated and corrected to ensure accurate warehouse loading.
-
-### Main Outcome
-
-A scalable Microsoft Fabric data foundation capable of supporting downstream analytics, operational applications, workflow automation, and AI.
+A reusable enterprise data foundation supporting reporting, applications, automation, and future AI workloads.
 
 ---
 
 # Phase 4 — Power BI Analytics & Reporting
 
-**Status: Completed**
+Built an interactive **Equipment Operations Intelligence Dashboard** on top of the Fabric Warehouse.
 
-Phase 4 transformed the Fabric warehouse into an interactive **Equipment Operations Intelligence Dashboard**.
+## Dashboard Areas
 
-A Power BI semantic model was built on top of the analytical warehouse.
+### Executive Overview
 
----
+Provides management-level visibility into:
 
-# Power BI Dashboard Structure
+- Asset performance
+- Equipment health
+- Failures
+- Downtime
+- Maintenance
+- Work orders
+- Operational costs
 
-The reporting solution contains multiple operational views.
+![Executive Overview](image/README/1789772344682.png)
 
-![1789772289423](image/README/1789772289423.png)
+### Asset Health & Reliability
 
-Navigation controls allow users to move between analytical pages from the main dashboard.
+Analyses:
 
----
-
-# Executive Overview
-
-Provides senior operations stakeholders with a consolidated view of overall equipment performance.
-
-Typical KPIs include:
-
-![1789772344682](image/README/1789772344682.png)
-
-The page provides a high-level operational snapshot across manufacturing sites.
-
----
-
-# Asset Health & Reliability
-
-Designed to identify equipment requiring operational attention.
-
-Analysis includes:
-
-![1789772471648](image/README/1789772471648.png)
-
-The dashboard helps users identify potentially high-risk equipment and compare operational performance across sites.
-
----
-
-# Failure & Downtime Analysis
-
-Provides detailed insight into equipment failures.
-
-Analysis includes:
-
-![1789772517584](image/README/1789772517584.png)
-
-This enables operations teams to identify recurring reliability problems and major downtime drivers.
-
----
-
-# Maintenance Analysis
-
-Provides visibility into maintenance activity and operational workload.
-
-Analysis includes:
-
-- Maintenance events
-- Maintenance duration
-- Maintenance type
-- Maintenance status
-- Asset
+- Health Score
+- Asset Status
+- Criticality
+- Asset Type
 - Site
-- Planned maintenance
-- Unplanned maintenance
+- Reliability indicators
 
-A dedicated **Planned vs Unplanned Maintenance** visual highlights the balance between proactive and reactive maintenance activity.
+![Asset Health](image/README/1789772471648.png)
 
-This analysis supports maintenance planning and reliability improvement.
+### Failure & Downtime Analysis
+
+Provides visibility into:
+
+- Failure frequency
+- Downtime hours
+- Failure severity
+- Failure components
+- Root causes
+- Production impact
+
+![Failure Analysis](image/README/1789772517584.png)
+
+### Work Orders & Maintenance Operations
+
+Tracks:
+
+- Work-order priorities
+- Work-order status
+- Maintenance activity
+- Planned vs unplanned maintenance
+- Asset and site workload
+
+Power BI slicers enable analysis by site, asset, asset type, priority, severity, maintenance type, and date.
+
+### Outcome
+
+Operational data was transformed into an interactive decision-support layer for managers and maintenance teams.
 
 ---
 
-# Work Orders & Maintenance Operations
+# Phase 5 — Dataverse Operational Model
 
-A dedicated operational page was created to monitor maintenance execution.
+Phase 5 moved the project beyond analytics by creating an operational application data layer in **Microsoft Dataverse**.
 
-### KPI Area
+Four core Dataverse tables were implemented:
 
-Provides top-level work-order metrics and interactive slicers.
+```text
+Site
+Asset
+Issue
+Maintenance Action
+```
 
-### Work Orders by Priority
+## Site
 
-Displays work-order distribution across operational priority levels.
-
-This allows maintenance teams to identify the current operational workload and focus on higher-priority tasks.
-
-### Work Order Status Analysis
-
-Shows how work orders are distributed across lifecycle states.
+Stores manufacturing-site information.
 
 Examples:
 
-```text
-Open
-In Progress
-Scheduled
-Completed
-```
+- Site ID
+- Site Name
+- Location
+- Region
+- Country
+- Site Type
 
-### Maintenance Operations Analysis
+## Asset
 
-Combines work-order and maintenance information to provide visibility into current operational activities.
+Represents equipment managed across operational sites.
 
----
+Includes information such as:
 
-# Interactive Filtering
-
-Power BI slicers allow users to dynamically analyze operations by dimensions such as:
-
-- Site
 - Asset
 - Asset Type
+- Asset Status
 - Criticality
-- Failure Severity
-- Work Order Priority
-- Maintenance Type
-- Date
+- Site
+- Health Score
 
-Cross-filtering enables users to move from enterprise-level KPIs to individual equipment-level investigation.
+## Issue
+
+Supports operational issue management for equipment requiring investigation or maintenance.
+
+## Maintenance Action
+
+Tracks actions performed against operational issues.
+
+Information includes:
+
+- Action
+- Issue
+- Action Type
+- Assigned technician
+- Scheduled date
+- Completed date
+- Status
+- Estimated cost
+- Actual cost
+
+Views and forms were configured to support the application layer.
+
+### Outcome
+
+Dataverse became the transactional operational layer connecting equipment data with Power Apps and Power Automate.
 
 ---
 
-# Power BI Semantic Model
+# Phase 6 — Canvas & Model-Driven Power Apps
 
-The semantic layer connects warehouse fact and dimension tables through defined relationships.
+Built operational applications on top of the Dataverse model.
 
-Conceptually:
+## Model-Driven App
+
+Configured operational views and forms for:
+
+- Assets
+- Issues
+- Maintenance Actions
+
+This provides structured access to Dataverse records for operations and administrative users.
+
+---
+
+## Canvas App
+
+A technician-focused Canvas application was created for day-to-day maintenance operations.
+
+Core application flow:
 
 ```text
-                 dim_date
-                    │
-                    │
-dim_site ─── dim_asset
-                 │
-       ┌─────────┼──────────┐
-       │         │          │
-fact_failure  fact_maintenance
-       │         │
-       └── fact_work_order
-                 │
-              fact_cost
+Technician Home
+      │
+      ├── View Assets
+      │
+      ├── View Issues
+      │
+      ├── View Maintenance
+      │
+      ├── New Maintenance
+      │
+      └── Edit Maintenance
 ```
 
-The model provides a reusable analytical foundation for the operational dashboards.
+Functionality includes:
+
+- Site browsing
+- Asset browsing
+- Issue viewing
+- Maintenance-action creation
+- Maintenance-action editing
+- Status management
+- Form validation
+- Success notifications
+- Screen navigation
+- Data refresh
+- Latest maintenance actions
+
+Maintenance galleries automatically refresh after new actions are submitted so technicians can immediately see newly created records.
+
+![1790342476210](image/README/1790342476210.png)
+
+### Outcome
+
+The project evolved from a reporting platform into an interactive operational system used to manage real maintenance activities.
 
 ---
 
-# Current Platform Capability
+# Phase 7 — Power Automate Workflows & Approvals
 
-After completion of Phase 4, the system can now:
+Power Automate was introduced to automate operational processes around Dataverse.
 
-- Consolidate operational equipment data
-- Validate equipment data quality
-- Store data using Fabric medallion architecture
-- Maintain an enterprise analytical warehouse
-- Refresh warehouse tables through data pipelines
-- Analyse equipment reliability
-- Identify equipment failures
-- Analyse operational downtime
+The workflows connect:
+
+```text
+Dataverse
+    │
+    ▼
+Power Automate
+    │
+    ├── Notifications
+    ├── Approval Processing
+    ├── Maintenance Monitoring
+    └── Reminder Automation
+```
+
+## Automated Operational Workflows
+
+Flows were created to respond to Dataverse events and automate communication around operational activities.
+
+This reduces dependency on manual monitoring of the application.
+
+---
+
+## Approval Workflow
+
+An approval process was implemented for operational records requiring review.
+
+The workflow allows business processes to move through controlled approval stages rather than relying on manual email coordination.
+
+---
+
+## Maintenance Notifications
+
+Automated notifications provide users with information when maintenance-related events occur.
+
+This connects the technician application directly with operational communication workflows.
+
+---
+
+## Overdue Maintenance Monitoring
+
+A scheduled Power Automate flow was created to identify maintenance actions where:
+
+```text
+Scheduled Date < Current Date
+```
+
+and the maintenance activity has not yet been completed.
+
+When an overdue action is detected, the workflow automatically sends a reminder notification.
+
+The workflow was tested end-to-end by creating an overdue maintenance record and confirming that the reminder email was successfully generated.
+
+### Outcome
+
+Operational maintenance management is no longer dependent only on users manually checking the application.
+
+The platform can now actively detect workflow conditions and trigger the appropriate operational communication.
+
+---
+
+# End-to-End Operational Flow
+
+With Phases 1–7 completed, the platform now supports:
+
+```text
+Equipment Data
+      ↓
+Data Validation
+      ↓
+Microsoft Fabric
+      ↓
+Lakehouse
+      ↓
+Fabric Warehouse
+      ↓
+Power BI Intelligence
+      ↓
+Dataverse
+      ↓
+Power Apps
+      ↓
+Issue / Maintenance Management
+      ↓
+Power Automate
+      ↓
+Notifications / Approvals / Reminders
+```
+
+This creates a connection between **analytics and operational action**.
+
+---
+
+# Current Platform Capabilities
+
+The solution can currently:
+
+- Consolidate industrial equipment data
+- Validate data quality
+- Build Bronze, Silver, and Gold data layers
+- Maintain a Fabric analytical warehouse
+- Automate warehouse data movement
+- Analyse asset reliability
+- Analyse failures and downtime
 - Monitor maintenance activity
-- Compare planned and unplanned maintenance
-- Track work-order priorities and status
 - Analyse operational costs
-- Filter performance by site, asset, and operational attributes
-- Support management-level operational reporting
-
----
-
-# Project Progress
-
-| Phase   | Description                           | Status        |
-| ------- | ------------------------------------- | ------------- |
-| Phase 1 | Business Problem & Project Definition | ✅ Completed  |
-| Phase 2 | Data Setup & Quality                  | ✅ Completed  |
-| Phase 3 | Microsoft Fabric Data Foundation      | ✅ Completed  |
-| Phase 4 | Power BI Analytics & Reporting        | ✅ Completed  |
-| Phase 5 | Dataverse Operational Model           | ✅ Completed  |
-| Phase 6 | Power Apps Operational Application    | ✅ Completed  |
-| Phase 7 | Power Automate Workflows & Approvals  | ✅ Completed  |
-| Phase 8 | AI / Agentic Operations Assistant     | ⏳ Planned    |
-
----
-
-# Target End-State Architecture
-
-```text
-                    ┌─────────────────────┐
-                    │ Operational Sources │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │ Microsoft Fabric    │
-                    │ Lakehouse           │
-                    └──────────┬──────────┘
-                               │
-                    Bronze → Silver → Gold
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │ Fabric Warehouse    │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │ Power BI            │
-                    │ Intelligence Layer  │
-                    └──────────┬──────────┘
-                               │
-                               ▼
-                    ┌─────────────────────┐
-                    │ Microsoft Dataverse │
-                    └──────────┬──────────┘
-                               │
-                   ┌───────────┴───────────┐
-                   ▼                       ▼
-          ┌────────────────┐      ┌────────────────┐
-          │ Power Apps     │      │ Power Automate │
-          └────────┬───────┘      └────────┬───────┘
-                   │                       │
-                   └───────────┬───────────┘
-                               ▼
-                    ┌─────────────────────┐
-                    │ Agentic AI / Copilot│
-                    └─────────────────────┘
-```
-
----
-
-# Business Value
-
-The Intelligent Equipment Operations Hub demonstrates how modern Microsoft technologies can be integrated to create an end-to-end industrial operations solution.
-
-The platform aims to transition equipment management from:
-
-```text
-Disconnected Data
-        ↓
-Manual Reporting
-        ↓
-Reactive Investigation
-```
-
-to:
-
-```text
-Connected Operational Data
-        ↓
-Real-Time Analytics
-        ↓
-Automated Workflows
-        ↓
-AI-Assisted Investigation
-        ↓
-Faster Operational Decisions
-```
+- Track work-order performance
+- Manage Sites and Assets in Dataverse
+- Create and manage Issues
+- Create and update Maintenance Actions
+- Provide technician-facing Power Apps
+- Automate operational notifications
+- Execute approval workflows
+- Detect overdue maintenance
+- Automatically send maintenance reminders
 
 ---
 
 # Skills Demonstrated
 
-This project demonstrates practical experience across:
+### Microsoft Fabric
+
+- Lakehouse
+- Medallion architecture
+- Fabric Warehouse
+- Data Pipelines
+- Data engineering
+- SQL
+- Data validation
+
+### Power BI
+
+- Semantic models
+- Star schema
+- DAX
+- KPI development
+- Operational dashboards
+- Equipment reliability analytics
+- Maintenance analytics
+
+### Power Platform
+
+- Microsoft Dataverse
+- Canvas Apps
+- Model-Driven Apps
+- Power Fx
+- Forms and galleries
+- Dataverse integration
+- Power Automate
+- Scheduled cloud flows
+- Automated notifications
+- Approval workflows
 
 ### Data Engineering
 
-- Microsoft Fabric
-- Lakehouse architecture
-- Medallion architecture
-- Data pipelines
-- ETL / ELT
 - Python
 - Pandas
-- SQL
+- ETL / ELT
 - Data-quality validation
+- Dimensional modelling
 - Data warehousing
 
-### Data Analytics
+---
 
-- Power BI
-- DAX
-- Semantic modelling
-- Star schema
-- KPI design
-- Operational analytics
-- Equipment reliability analysis
-- Failure analysis
-- Maintenance analytics
+# Next Phase — AI / Agentic Operations Assistant
 
-### Microsoft Power Platform
+The next phase will introduce an intelligent operational assistant on top of the platform.
 
-Planned / developing:
+Potential capabilities include:
 
-- Microsoft Dataverse
-- Power Apps
-- Power Automate
-- Approval workflows
-- Business process automation
+```text
+User Question
+      ↓
+AI Operations Assistant
+      ↓
+Power BI / Fabric / Dataverse
+      ↓
+Operational Context
+      ↓
+AI Recommendation
+      ↓
+Human Decision
+      ↓
+Power Automate / Power Apps Action
+```
 
-### AI
-
-Planned:
-
-- Copilot integration
-- AI-assisted operational investigation
-- Natural-language equipment queries
-- Automated operational summaries
-- Agentic AI workflows
+The objective is to enable natural-language interaction with equipment and maintenance data and support faster operational investigation.
 
 ---
 
 # Project Vision
 
-The long-term objective is to build more than a reporting dashboard.
-
-The goal is to create an **Intelligent Equipment Operations Hub** where industrial data, analytics, applications, automation, and AI work together.
-
-The completed platform is intended to support a workflow where:
+The project is designed to evolve traditional industrial reporting into an integrated operational intelligence platform.
 
 ```text
 Monitor
    ↓
 Detect
    ↓
+Analyse
+   ↓
 Investigate
    ↓
 Prioritize
    ↓
-Act
+Assign
    ↓
 Approve
+   ↓
+Maintain
+   ↓
+Notify
    ↓
 Resolve
    ↓
 Learn
 ```
 
-This transforms equipment data into an operational decision and action system.
+Rather than stopping at a Power BI dashboard, the **Intelligent Equipment Operations Hub** connects:
+
+**Data Engineering → Analytics → Applications → Automation → AI**
+
+to transform industrial data into operational decisions and actions.
 
 ---
+
+## Current Status
+
+### ✅ Phases 1–7 Completed
+
+The current end-to-end platform provides:
+
+**Operational Data → Microsoft Fabric → Fabric Warehouse → Power BI → Dataverse → Power Apps → Power Automate**
+
+### ⏳ Next
+
+**Phase 8 — AI / Agentic Operations Assistant**
