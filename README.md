@@ -641,16 +641,205 @@ Rather than stopping at a Power BI dashboard, the **Intelligent Equipment Operat
 
 to transform industrial data into operational decisions and actions.
 
+
+# Phase 8 — AI / Agentic Operations Assistant
+
+Phase 8 introduced an **AI-powered Operations Assistant** to extend the platform beyond dashboards, applications, and workflow automation.
+
+The objective was to allow users to interact with equipment information using natural-language questions and receive contextual operational responses.
+
 ---
 
-## Current Status
+## AI Assistant Architecture
 
-### ✅ Phases 1–7 Completed
+```text
+User Question
+      ↓
+Copilot / AI Assistant
+      ↓
+Asset Context
+      ↓
+Operational Data
+      ↓
+LLM Reasoning
+      ↓
+Contextual Response
+```
 
-The current end-to-end platform provides:
+The assistant acts as an intelligent interface between users and equipment operational data.
 
-**Operational Data → Microsoft Fabric → Fabric Warehouse → Power BI → Dataverse → Power Apps → Power Automate**
+---
 
-### ⏳ Next
+## Core Capabilities
 
-**Phase 8 — AI / Agentic Operations Assistant**
+The AI Operations Assistant can support queries such as:
+
+- Asset health and current status
+- Equipment criticality
+- Failure history
+- Maintenance information
+- Operational risk
+- Recommended next actions
+- Asset-specific investigation
+- Maintenance prioritization
+
+Example interaction:
+
+```text
+User:
+What is the current condition of ASSET-001?
+
+AI Assistant:
+Retrieves the relevant asset context,
+analyses its operational information,
+and returns a concise equipment assessment.
+```
+
+---
+
+## Asset Context Layer
+
+Equipment information is supplied to the AI assistant as structured context.
+
+Example:
+
+```json
+{
+  "Asset_ID": "ASSET-001",
+  "Asset_Type": "Pump",
+  "Asset_Status": "Active",
+  "Criticality": "High",
+  "Health_Score": 72,
+  "Site": "SITE001"
+}
+```
+
+The assistant retrieves the requested asset before sending its context to the language model.
+
+This ensures that responses are grounded in the selected equipment record rather than relying only on general AI knowledge.
+
+---
+
+## LLM Integration
+
+A Python-based AI service was implemented using an LLM API.
+
+Core workflow:
+
+```text
+Asset ID
+   ↓
+get_asset()
+   ↓
+Retrieve Asset Data
+   ↓
+Build System Context
+   ↓
+Send Question + Asset Context to LLM
+   ↓
+Generate Operational Response
+```
+
+The implementation uses environment-based API-key management to avoid hardcoding credentials in the application.
+
+---
+
+## Copilot Assistant
+
+The AI capability was also represented through a **Copilot-style operational assistant**.
+
+The assistant is designed to provide a conversational interface where operations teams can ask questions such as:
+
+```text
+"What is the health of this asset?"
+
+"Is this equipment high risk?"
+
+"What maintenance should be considered?"
+
+"What problems should I investigate first?"
+
+"Summarize the current condition of this asset."
+```
+
+This makes operational information easier to access for users who may not need to directly analyse dashboards or underlying datasets.
+
+---
+
+## AI-Assisted Operational Flow
+
+```text
+Equipment Data
+      ↓
+Microsoft Fabric / Dataverse
+      ↓
+Operational Context
+      ↓
+AI Operations Assistant
+      ↓
+Natural-Language Analysis
+      ↓
+Recommended Operational Action
+      ↓
+Human Review / Decision
+```
+
+The AI layer complements the existing Power BI, Power Apps, Dataverse, and Power Automate components rather than replacing human operational decisions.
+
+---
+
+## Role Within the Platform
+
+With Phase 8, the solution architecture becomes:
+
+```text
+Operational Data
+      ↓
+Microsoft Fabric
+      ↓
+Lakehouse / Warehouse
+      ↓
+Power BI Analytics
+      ↓
+Microsoft Dataverse
+      ↓
+Power Apps
+      ↓
+Power Automate
+      ↓
+AI / Copilot Operations Assistant
+```
+
+The project therefore progresses from:
+
+```text
+Data
+ ↓
+Insight
+ ↓
+Application
+ ↓
+Automation
+ ↓
+Intelligence
+```
+
+---
+
+![1790512258662](image/README/1790512258662.png)
+
+## Outcome
+
+Phase 8 adds a conversational intelligence layer to the **Intelligent Equipment Operations Hub**.
+
+The completed platform can now combine:
+
+- Enterprise data engineering
+- Equipment analytics
+- Operational applications
+- Workflow automation
+- Approval and notification processes
+- Natural-language operational assistance
+- AI-supported equipment investigation
+
+This transforms the project from a traditional reporting solution into an integrated **Data + Analytics + Apps + Automation + AI operational platform**.
